@@ -1,7 +1,14 @@
+#include <QApplication>
+#include "game.h"
 #include <iostream>
-using namespace std;
 
-int main() {
-    cout << "Hello Assignment 2!" << endl;
-    return 0;
+int main(int argc, char *argv[])
+{
+
+    QApplication app(argc, argv);
+    
+    Game game;
+    game.start();
+    
+    return app.exec();
 }

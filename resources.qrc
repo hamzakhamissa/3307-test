@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/assets">
+        <file>assets/Up_character.png</file>
+        <file>assets/tile.png</file>
+        <file>assets/Seed_1.png</file>
+        <file>assets/Right_character.png</file>
+        <file>assets/Plant_1_Phase_3.png</file>
+        <file>assets/Plant_1_Phase_2.png</file>
+        <file>assets/Plant_1_Phase_1.png</file>
+        <file>assets/Left_character.png</file>
+        <file>assets/Idle_character.png</file>
+        <file>assets/hoe.png</file>
+        <file>assets/dirt.png</file>
+        <file>assets/Down_character.png</file>
+    </qresource>
+</RCC>
