@@ -15,8 +15,8 @@ public:
     std::string getType() override;
     void setType(std::string newType) override;
 
-    void setCrop(ICrops* crop) override;
-    ICrops* getCrop() override;
+    void setCrop(ICrops *crop) override;
+    ICrops *getCrop() override;
     bool hasCrop() override;
 
     bool getWatered() override;

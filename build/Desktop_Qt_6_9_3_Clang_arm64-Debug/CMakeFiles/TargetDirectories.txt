@@ -1,0 +1,5 @@
+/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/CMakeFiles/assignment2.dir
+/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/CMakeFiles/edit_cache.dir
+/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/CMakeFiles/rebuild_cache.dir
+/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/CMakeFiles/assignment2_autogen_timestamp_deps.dir
+/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/CMakeFiles/assignment2_autogen.dir

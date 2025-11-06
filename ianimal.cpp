@@ -1,10 +1,12 @@
 #include "ianimal.h"
 
-IAnimal::IAnimal() {
+IAnimal::IAnimal()
+{
     // Base constructor for IAnimal
     harvestable = false;
 }
 
-IAnimal::~IAnimal() {
+IAnimal::~IAnimal()
+{
     // Base destructor for IAnimal
 }

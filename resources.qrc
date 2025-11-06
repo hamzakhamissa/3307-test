@@ -1,5 +1,22 @@
 <RCC>
     <qresource prefix="/assets">
+        <file>assets/Chicken_left.png</file>
+        <file>assets/Chicken_right.png</file>
+        <file>assets/Corn_seed.png</file>
+        <file>assets/Corn_Stage_1.png</file>
+        <file>assets/Corn_Stage_2.png</file>
+        <file>assets/Corn.png</file>
+        <file>assets/Cow_left.png</file>
+        <file>assets/Cow_right.png</file>
+        <file>assets/Tomato_Stage_1.png</file>
+        <file>assets/Tomato_Stage_2.png</file>
+        <file>assets/Tomato_seed.png</file>
+        <file>assets/Tomato.png</file>
+        <file>assets/Watering_Can.png</file>
+        <file>assets/Wheat_seed.png</file>
+        <file>assets/Wheat_Stage_1.png</file>
+        <file>assets/Wheat_Stage_2.png</file>
+        <file>assets/Wheat.png</file>
         <file>assets/Up_character.png</file>
         <file>assets/tile.png</file>
         <file>assets/Seed_1.png</file>

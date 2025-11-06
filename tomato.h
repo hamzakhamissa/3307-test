@@ -19,7 +19,6 @@ public:
 
     void setHarvestable(bool ynHarvest) override;
     bool getHarvestable() override;
-
 };
 
 #endif // TOMATO_h

@@ -19,7 +19,6 @@ private:
 
     void setHarvestable(bool ynHarvest) override;
     bool getHarvestable() override;
-
 };
 
 #endif // CORN_H

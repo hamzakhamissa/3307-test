@@ -1,7 +1,8 @@
 #include "chicken.h"
 
 // Constructor for the chicken class, sets appropriate attributes
-Chicken::Chicken() {
+Chicken::Chicken()
+{
     type = "Chicken";
     foodType = "Corn";
     state = 0;
@@ -9,40 +10,44 @@ Chicken::Chicken() {
 }
 
 // Returns the current state of the chicken
-int Chicken::getState() {
+int Chicken::getState()
+{
     return state;
 }
 
 // Sets the state of the cow
-void Chicken::setState(int newState) {
+void Chicken::setState(int newState)
+{
     state = newState;
 }
 
 // Gets the type of the animal. Should always be Cow
-std::string Chicken::getType() {
+std::string Chicken::getType()
+{
     return type;
 }
 
 // Gets the food type of the animal
-std::string Chicken::getFoodType() {
+std::string Chicken::getFoodType()
+{
     return foodType;
 }
 
 // Checks whether or not the animal is harvestable
-bool Chicken::getHarvestable() {
+bool Chicken::getHarvestable()
+{
     return harvestable;
 }
 
 // Checks to see if the conditions are met for the cow to be harvestable (state == 1 (chicken has been given food))
-void Chicken::setHarvestable() {
-    if (state == 1){
+void Chicken::setHarvestable()
+{
+    if (state == 1) {
         harvestable = true;
-    }
-    else {
+    } else {
         harvestable = false;
     }
 }
 
 // Destructor
-Chicken::~Chicken() {
-}
+Chicken::~Chicken() {}

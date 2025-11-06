@@ -12,7 +12,6 @@ public:
     virtual void setState(int newState) = 0;
     virtual std::string getType() = 0;
 
-
 protected:
     std::string type;
     int state;

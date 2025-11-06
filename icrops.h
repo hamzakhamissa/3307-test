@@ -16,8 +16,8 @@ public:
     virtual int getGrowthSpeed() = 0;
     virtual void setGrowthSpeed(int speed) = 0;
 
-    virtual void setHarvestable (bool ynHarvest) = 0;
-    virtual bool getHarvestable () = 0;
+    virtual void setHarvestable(bool ynHarvest) = 0;
+    virtual bool getHarvestable() = 0;
 
 protected:
     std::string type;

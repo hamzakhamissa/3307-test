@@ -1,0 +1,36 @@
+{
+	"BUILD_DIR" : "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/assignment2_autogen",
+	"CMAKE_BINARY_DIR" : "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza",
+	"CMAKE_SOURCE_DIR" : "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza",
+	"CROSS_CONFIG" : false,
+	"GENERATOR" : "Unix Makefiles",
+	"INCLUDE_DIR" : "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/assignment2_autogen/include",
+	"INPUTS" : 
+	[
+		"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/assets/Plant_1_Phase_3.png",
+		"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/assets/Seed_1.png",
+		"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/assets/hoe.png",
+		"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/assets/Right_character.png",
+		"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/assets/tile.png",
+		"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/assets/dirt.png",
+		"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/assets/Idle_character.png",
+		"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/assets/Plant_1_Phase_1.png",
+		"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/assets/Up_character.png",
+		"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/assets/Down_character.png",
+		"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/assets/Plant_1_Phase_2.png",
+		"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/assets/Left_character.png"
+	],
+	"LOCK_FILE" : "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/CMakeFiles/assignment2_autogen.dir/AutoRcc_resources_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "--no-zstd", "-name", "resources" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_resources.cpp",
+	"RCC_EXECUTABLE" : "/Users/hamzakhamissa/Qt/6.9.3/macos/libexec/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/CMakeFiles/assignment2_autogen.dir/AutoRcc_resources_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/resources.qrc",
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}

@@ -4,8 +4,8 @@
 
 // #include <QLabel>  // Qt not configured in CMakeLists.txt yet
 
-#include "itool.h"
 #include "icrops.h"
+#include "itool.h"
 
 class Character
 {
@@ -27,8 +27,8 @@ public:
     //Need a fix to inventory, currently cannot hold animals
     virtual std::vector<ICrops> getCropsInventory() = 0;
     virtual std::vector<ITool> getToolInventory() = 0;
-    virtual void addCropsInventory(ICrops* crop) = 0;
-    virtual void addToolInventory(ITool* tool) = 0;
+    virtual void addCropsInventory(ICrops *crop) = 0;
+    virtual void addToolInventory(ITool *tool) = 0;
 
     virtual void setMoney() = 0;
     virtual int getMoney() = 0;

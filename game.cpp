@@ -1,15 +1,24 @@
 #include "game.h"
-#include <iostream>
-#include <cmath>
 #include <QElapsedTimer>
+#include <cmath>
+#include <iostream>
 
-Game::Game(QWidget *parent) : QWidget(parent),
-    gameTimer(nullptr), running(false),
-    playerX(400.0f), playerY(300.0f), playerSpeed(100.0f),
-    playerDirection(DIR_DOWN), playerMoving(false),
-    cameraX(0.0f), cameraY(0.0f),
-    selectedSlot(0), mouseLeftPressed(false), mouseLeftPressedLastFrame(false),
-    elapsedTimer(nullptr) {
+Game::Game(QWidget *parent)
+    : QWidget(parent)
+    , gameTimer(nullptr)
+    , running(false)
+    , playerX(400.0f)
+    , playerY(300.0f)
+    , playerSpeed(100.0f)
+    , playerDirection(DIR_DOWN)
+    , playerMoving(false)
+    , cameraX(0.0f)
+    , cameraY(0.0f)
+    , selectedSlot(0)
+    , mouseLeftPressed(false)
+    , mouseLeftPressedLastFrame(false)
+    , elapsedTimer(nullptr)
+{
     // Initialize tile map with grass
     for (int y = 0; y < MAP_HEIGHT; y++) {
         for (int x = 0; x < MAP_WIDTH; x++) {
@@ -20,19 +29,19 @@ Game::Game(QWidget *parent) : QWidget(parent),
     // Initialize inventory: Slot 1 = Hoe, Slot 2 = Seed
     hotbar[0] = ITEM_HOE;
     hotbar[1] = ITEM_SEED;
-    
+
     // Set window properties
     setFixedSize(WINDOW_WIDTH, WINDOW_HEIGHT);
     setWindowTitle("Farmland - Farming Simulator");
-    
+
     // Enable keyboard focus
     setFocusPolicy(Qt::StrongFocus);
 }
 
-Game::~Game() {
-}
+Game::~Game() {}
 
-bool Game::init() {
+bool Game::init()
+{
     // Load all textures
     if (!loadAllTextures()) {
         std::cerr << "Failed to load some textures!" << std::endl;
@@ -47,19 +56,21 @@ bool Game::init() {
     // Initialize timing
     elapsedTimer = new QElapsedTimer();
     elapsedTimer->start();
-    
+
     running = true;
     return true;
 }
 
-void Game::start() {
+void Game::start()
+{
     show();
     if (init()) {
         // Game loop is handled by QTimer
     }
 }
 
-void Game::gameLoop() {
+void Game::gameLoop()
+{
     if (!running) {
         return;
     }
@@ -68,7 +79,7 @@ void Game::gameLoop() {
     static qint64 lastTime = -1;
     qint64 currentTime = elapsedTimer->elapsed();
     float deltaTime;
-    
+
     if (lastTime < 0) {
         // First frame, assume 60 FPS
         deltaTime = 0.016f;
@@ -76,9 +87,10 @@ void Game::gameLoop() {
     } else {
         deltaTime = (currentTime - lastTime) / 1000.0f; // Convert to seconds
         lastTime = currentTime;
-        
+
         // Cap delta time to prevent large jumps
-        if (deltaTime > 0.1f) deltaTime = 0.1f;
+        if (deltaTime > 0.1f)
+            deltaTime = 0.1f;
     }
 
     handleInput();
@@ -86,7 +98,8 @@ void Game::gameLoop() {
     repaint(); // Trigger repaint
 }
 
-bool Game::loadAllTextures() {
+bool Game::loadAllTextures()
+{
     charDownTex.load(":/assets/assets/Down_character.png");
     charLeftTex.load(":/assets/assets/Left_character.png");
     charRightTex.load(":/assets/assets/Right_character.png");
@@ -96,14 +109,14 @@ bool Game::loadAllTextures() {
     dirtTex.load(":/assets/assets/dirt.png");
     hoeTex.load(":/assets/assets/hoe.png");
     seedTex.load(":/assets/assets/Seed_1.png");
-    seed1Tex.load(":/assets/assets/Seed_1.png");  // Same as seed for now
+    seed1Tex.load(":/assets/assets/Seed_1.png"); // Same as seed for now
     plantPhase1Tex.load(":/assets/assets/Plant_1_Phase_1.png");
     plantPhase2Tex.load(":/assets/assets/Plant_1_Phase_2.png");
     plantPhase3Tex.load(":/assets/assets/Plant_1_Phase_3.png");
 
     // Check if all critical textures loaded
-    if (charDownTex.isNull() || tileTex.isNull() || dirtTex.isNull() || 
-        hoeTex.isNull() || seedTex.isNull()) {
+    if (charDownTex.isNull() || tileTex.isNull() || dirtTex.isNull() || hoeTex.isNull()
+        || seedTex.isNull()) {
         std::cerr << "Warning: Some critical textures failed to load!" << std::endl;
         return false;
     }
@@ -111,7 +124,8 @@ bool Game::loadAllTextures() {
     return true;
 }
 
-void Game::cleanupTextures() {
+void Game::cleanupTextures()
+{
     // QPixmap handles cleanup automatically, but we can clear them
     charDownTex = QPixmap();
     charLeftTex = QPixmap();
@@ -128,20 +142,22 @@ void Game::cleanupTextures() {
     plantPhase3Tex = QPixmap();
 }
 
-void Game::paintEvent(QPaintEvent *event) {
+void Game::paintEvent(QPaintEvent *event)
+{
     QPainter painter(this);
     painter.setRenderHint(QPainter::Antialiasing);
-    
+
     // Clear screen with sky blue background
     painter.fillRect(rect(), QColor(135, 206, 235));
-    
+
     render(painter);
 }
 
-void Game::keyPressEvent(QKeyEvent *event) {
+void Game::keyPressEvent(QKeyEvent *event)
+{
     int key = event->key();
     keys[key] = true;
-    
+
     // ESC key to exit
     if (key == Qt::Key_Escape) {
         running = false;
@@ -168,11 +184,13 @@ void Game::keyPressEvent(QKeyEvent *event) {
     }
 }
 
-void Game::keyReleaseEvent(QKeyEvent *event) {
+void Game::keyReleaseEvent(QKeyEvent *event)
+{
     keys[event->key()] = false;
 }
 
-void Game::mousePressEvent(QMouseEvent *event) {
+void Game::mousePressEvent(QMouseEvent *event)
+{
     if (event->button() == Qt::LeftButton) {
         mouseLeftPressed = true;
         // Interact on click
@@ -184,17 +202,19 @@ void Game::mousePressEvent(QMouseEvent *event) {
     }
 }
 
-void Game::handleInput() {
+void Game::handleInput()
+{
     mouseLeftPressedLastFrame = mouseLeftPressed;
     mouseLeftPressed = false;
     // Input is now handled by Qt event handlers
 }
 
-void Game::getTileAtPlayer(int& tileX, int& tileY) {
+void Game::getTileAtPlayer(int &tileX, int &tileY)
+{
     // Get tile in front of player based on direction
     // Use CHARACTER_SIZE to get the actual center of the character sprite
-    int centerTileX = (int)(playerX + CHARACTER_SIZE / 2) / TILE_SIZE;
-    int centerTileY = (int)(playerY + CHARACTER_SIZE / 2) / TILE_SIZE;
+    int centerTileX = (int) (playerX + CHARACTER_SIZE / 2) / TILE_SIZE;
+    int centerTileY = (int) (playerY + CHARACTER_SIZE / 2) / TILE_SIZE;
 
     // Adjust based on facing direction - get tile directly in front of character
     switch (playerDirection) {
@@ -217,12 +237,13 @@ void Game::getTileAtPlayer(int& tileX, int& tileY) {
     }
 }
 
-void Game::interactWithTile(int tileX, int tileY) {
+void Game::interactWithTile(int tileX, int tileY)
+{
     if (tileX < 0 || tileX >= MAP_WIDTH || tileY < 0 || tileY >= MAP_HEIGHT) {
         return;
     }
 
-    TileState& tile = tileMap[tileY][tileX];
+    TileState &tile = tileMap[tileY][tileX];
     ItemType selectedItem = hotbar[selectedSlot];
 
     // Hoe interaction - till grass into dirt
@@ -242,11 +263,12 @@ void Game::interactWithTile(int tileX, int tileY) {
     }
 }
 
-void Game::advanceGrowthCycle() {
+void Game::advanceGrowthCycle()
+{
     std::cout << "Advancing growth cycle..." << std::endl;
     for (int y = 0; y < MAP_HEIGHT; y++) {
         for (int x = 0; x < MAP_WIDTH; x++) {
-            TileState& tile = tileMap[y][x];
+            TileState &tile = tileMap[y][x];
             // Advance growth stages
             if (tile == TILE_SEEDED) {
                 tile = TILE_PLANT_PHASE_1;
@@ -261,7 +283,8 @@ void Game::advanceGrowthCycle() {
     }
 }
 
-void Game::update(float deltaTime) {
+void Game::update(float deltaTime)
+{
     // Player movement with WASD
     float moveX = 0.0f, moveY = 0.0f;
     PlayerDirection newDirection = playerDirection;
@@ -299,40 +322,53 @@ void Game::update(float deltaTime) {
     playerY += moveY * playerSpeed * deltaTime;
 
     // Keep player within map bounds - account for CHARACTER_SIZE
-    if (playerX < 0) playerX = 0;
-    if (playerX > MAP_WIDTH * TILE_SIZE - CHARACTER_SIZE) playerX = MAP_WIDTH * TILE_SIZE - CHARACTER_SIZE;
-    if (playerY < 0) playerY = 0;
-    if (playerY > MAP_HEIGHT * TILE_SIZE - CHARACTER_SIZE) playerY = MAP_HEIGHT * TILE_SIZE - CHARACTER_SIZE;
+    if (playerX < 0)
+        playerX = 0;
+    if (playerX > MAP_WIDTH * TILE_SIZE - CHARACTER_SIZE)
+        playerX = MAP_WIDTH * TILE_SIZE - CHARACTER_SIZE;
+    if (playerY < 0)
+        playerY = 0;
+    if (playerY > MAP_HEIGHT * TILE_SIZE - CHARACTER_SIZE)
+        playerY = MAP_HEIGHT * TILE_SIZE - CHARACTER_SIZE;
 
     // Update camera to follow player (centered on character)
     cameraX = playerX + CHARACTER_SIZE / 2.0f - WINDOW_WIDTH / 2.0f;
     cameraY = playerY + CHARACTER_SIZE / 2.0f - WINDOW_HEIGHT / 2.0f;
 
     // Clamp camera to map bounds
-    if (cameraX < 0) cameraX = 0;
-    if (cameraX > MAP_WIDTH * TILE_SIZE - WINDOW_WIDTH) cameraX = MAP_WIDTH * TILE_SIZE - WINDOW_WIDTH;
-    if (cameraY < 0) cameraY = 0;
-    if (cameraY > MAP_HEIGHT * TILE_SIZE - WINDOW_HEIGHT) cameraY = MAP_HEIGHT * TILE_SIZE - WINDOW_HEIGHT;
+    if (cameraX < 0)
+        cameraX = 0;
+    if (cameraX > MAP_WIDTH * TILE_SIZE - WINDOW_WIDTH)
+        cameraX = MAP_WIDTH * TILE_SIZE - WINDOW_WIDTH;
+    if (cameraY < 0)
+        cameraY = 0;
+    if (cameraY > MAP_HEIGHT * TILE_SIZE - WINDOW_HEIGHT)
+        cameraY = MAP_HEIGHT * TILE_SIZE - WINDOW_HEIGHT;
 }
 
-void Game::render(QPainter& painter) {
+void Game::render(QPainter &painter)
+{
     // Calculate which tiles to render (visible tiles only)
-    int startTileX = (int)(cameraX / TILE_SIZE);
-    int startTileY = (int)(cameraY / TILE_SIZE);
+    int startTileX = (int) (cameraX / TILE_SIZE);
+    int startTileY = (int) (cameraY / TILE_SIZE);
     int endTileX = startTileX + (WINDOW_WIDTH / TILE_SIZE) + 2;
     int endTileY = startTileY + (WINDOW_HEIGHT / TILE_SIZE) + 2;
 
     // Clamp to map bounds
-    if (startTileX < 0) startTileX = 0;
-    if (startTileY < 0) startTileY = 0;
-    if (endTileX > MAP_WIDTH) endTileX = MAP_WIDTH;
-    if (endTileY > MAP_HEIGHT) endTileY = MAP_HEIGHT;
+    if (startTileX < 0)
+        startTileX = 0;
+    if (startTileY < 0)
+        startTileY = 0;
+    if (endTileX > MAP_WIDTH)
+        endTileX = MAP_WIDTH;
+    if (endTileY > MAP_HEIGHT)
+        endTileY = MAP_HEIGHT;
 
     // Render tiles
     for (int y = startTileY; y < endTileY; y++) {
         for (int x = startTileX; x < endTileX; x++) {
-            int screenX = x * TILE_SIZE - (int)cameraX;
-            int screenY = y * TILE_SIZE - (int)cameraY;
+            int screenX = x * TILE_SIZE - (int) cameraX;
+            int screenY = y * TILE_SIZE - (int) cameraY;
             renderTile(painter, x, y, screenX, screenY);
         }
     }
@@ -344,10 +380,11 @@ void Game::render(QPainter& painter) {
     renderItemInHand(painter);
 }
 
-void Game::renderTile(QPainter& painter, int tileX, int tileY, int screenX, int screenY) {
+void Game::renderTile(QPainter &painter, int tileX, int tileY, int screenX, int screenY)
+{
     QRect destRect(screenX, screenY, TILE_SIZE, TILE_SIZE);
     TileState tileState = tileMap[tileY][tileX];
-    QPixmap* textureToRender = nullptr;
+    QPixmap *textureToRender = nullptr;
 
     switch (tileState) {
     case TILE_GRASS:
@@ -408,14 +445,15 @@ void Game::renderTile(QPainter& painter, int tileX, int tileY, int screenX, int 
     }
 }
 
-void Game::renderPlayer(QPainter& painter) {
+void Game::renderPlayer(QPainter &painter)
+{
     // Calculate player position on screen
-    int screenX = (int)(playerX - cameraX);
-    int screenY = (int)(playerY - cameraY);
+    int screenX = (int) (playerX - cameraX);
+    int screenY = (int) (playerY - cameraY);
 
     // Character sprite size
     QRect destRect(screenX, screenY, CHARACTER_SIZE, CHARACTER_SIZE);
-    QPixmap* charTex = &charIdleTex; // Default to idle
+    QPixmap *charTex = &charIdleTex; // Default to idle
 
     // Select character sprite based on direction and movement
     if (playerMoving) {
@@ -448,31 +486,33 @@ void Game::renderPlayer(QPainter& painter) {
     painter.drawPixmap(destRect, *charTex);
 }
 
-void Game::renderItemInHand(QPainter& painter) {
+void Game::renderItemInHand(QPainter &painter)
+{
     ItemType selectedItem = hotbar[selectedSlot];
-    if (selectedItem == ITEM_NONE) return;
+    if (selectedItem == ITEM_NONE)
+        return;
 
     // Calculate position next to player based on direction
-    int screenX = (int)(playerX - cameraX);
-    int screenY = (int)(playerY - cameraY);
+    int screenX = (int) (playerX - cameraX);
+    int screenY = (int) (playerY - cameraY);
     int offsetX = 0, offsetY = 0;
 
     // Position item based on facing direction - use CHARACTER_SIZE for proper positioning
     switch (playerDirection) {
     case DIR_UP:
         offsetX = CHARACTER_SIZE / 4;
-        offsetY = -CHARACTER_SIZE / 3;  // Slightly above character
+        offsetY = -CHARACTER_SIZE / 3; // Slightly above character
         break;
     case DIR_DOWN:
         offsetX = -CHARACTER_SIZE / 4;
-        offsetY = CHARACTER_SIZE / 3;  // Slightly below character
+        offsetY = CHARACTER_SIZE / 3; // Slightly below character
         break;
     case DIR_LEFT:
-        offsetX = -CHARACTER_SIZE / 3;  // Slightly to the left
+        offsetX = -CHARACTER_SIZE / 3; // Slightly to the left
         offsetY = CHARACTER_SIZE / 4;
         break;
     case DIR_RIGHT:
-        offsetX = CHARACTER_SIZE / 3;  // Slightly to the right
+        offsetX = CHARACTER_SIZE / 3; // Slightly to the right
         offsetY = CHARACTER_SIZE / 4;
         break;
     }
@@ -480,14 +520,13 @@ void Game::renderItemInHand(QPainter& painter) {
     // Item size should scale with character size
     int itemSize = CHARACTER_SIZE / 2;
 
-    QRect destRect(
-        screenX + CHARACTER_SIZE / 2 + offsetX - itemSize / 2,  // Center on character + offset
-        screenY + CHARACTER_SIZE / 2 + offsetY - itemSize / 2,
-        itemSize,
-        itemSize
-    );
+    QRect destRect(screenX + CHARACTER_SIZE / 2 + offsetX
+                       - itemSize / 2, // Center on character + offset
+                   screenY + CHARACTER_SIZE / 2 + offsetY - itemSize / 2,
+                   itemSize,
+                   itemSize);
 
-    QPixmap* itemTex = nullptr;
+    QPixmap *itemTex = nullptr;
     if (selectedItem == ITEM_HOE && !hoeTex.isNull()) {
         itemTex = &hoeTex;
     } else if (selectedItem == ITEM_SEED && !seedTex.isNull()) {
@@ -499,7 +538,8 @@ void Game::renderItemInHand(QPainter& painter) {
     }
 }
 
-QPixmap Game::loadTexture(const QString& path) {
+QPixmap Game::loadTexture(const QString &path)
+{
     QPixmap pixmap(path);
     if (pixmap.isNull()) {
         std::cerr << "Unable to load image " << path.toStdString() << "!" << std::endl;

@@ -16,8 +16,8 @@ public:
     virtual std::string getType() = 0;
     virtual void setType(std::string newtype) = 0;
 
-    virtual void setCrop(ICrops* crop) = 0;
-    virtual ICrops* getCrop() = 0;
+    virtual void setCrop(ICrops *crop) = 0;
+    virtual ICrops *getCrop() = 0;
     virtual bool hasCrop() = 0;
 
     virtual bool getWatered() = 0;
@@ -28,7 +28,7 @@ protected:
     int state;
     bool ownsCrop;
     bool watered;
-    ICrops* crops;
+    ICrops *crops;
 };
 
 #endif // ITILES_H

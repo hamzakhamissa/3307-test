@@ -1,18 +1,18 @@
 #ifndef GAME_H
 #define GAME_H
 
-#include <QWidget>
-#include <QPainter>
-#include <QPixmap>
-#include <QTimer>
+#include <QElapsedTimer>
 #include <QKeyEvent>
 #include <QMouseEvent>
 #include <QPaintEvent>
+#include <QPainter>
+#include <QPixmap>
 #include <QString>
-#include <QElapsedTimer>
+#include <QTimer>
+#include <QWidget>
+#include <map>
 #include <string>
 #include <vector>
-#include <map>
 
 // Tile states
 enum TileState {
@@ -26,21 +26,13 @@ enum TileState {
 };
 
 // Player facing direction
-enum PlayerDirection {
-    DIR_DOWN = 0,
-    DIR_LEFT = 1,
-    DIR_RIGHT = 2,
-    DIR_UP = 3
-};
+enum PlayerDirection { DIR_DOWN = 0, DIR_LEFT = 1, DIR_RIGHT = 2, DIR_UP = 3 };
 
 // Inventory items
-enum ItemType {
-    ITEM_NONE = 0,
-    ITEM_HOE = 1,
-    ITEM_SEED = 2
-};
+enum ItemType { ITEM_NONE = 0, ITEM_HOE = 1, ITEM_SEED = 2 };
 
-class Game : public QWidget {
+class Game : public QWidget
+{
     Q_OBJECT
 
 public:
@@ -60,7 +52,7 @@ private slots:
     void gameLoop();
 
 private:
-    QTimer* gameTimer;
+    QTimer *gameTimer;
     bool running;
 
     // Game constants
@@ -68,7 +60,6 @@ private:
     static const int WINDOW_HEIGHT = 768;
     static const int TILE_SIZE = 32;
     static const int CHARACTER_SIZE = 128;
-
 
     float playerX;
     float playerY;
@@ -79,7 +70,6 @@ private:
     float cameraX;
     float cameraY;
 
-
     static const int MAP_WIDTH = 50;
     static const int MAP_HEIGHT = 50;
 
@@ -87,8 +77,8 @@ private:
     TileState tileMap[MAP_HEIGHT][MAP_WIDTH];
 
     // Inventory system
-    ItemType hotbar[2];  // Slot 1 = hoe, Slot 2 = seed
-    int selectedSlot;     // 0 = slot 1 (hoe), 1 = slot 2 (seed)
+    ItemType hotbar[2]; // Slot 1 = hoe, Slot 2 = seed
+    int selectedSlot;   // 0 = slot 1 (hoe), 1 = slot 2 (seed)
 
     // Sprites/Textures (using QPixmap instead of SDL_Texture)
     QPixmap charDownTex;
@@ -96,41 +86,41 @@ private:
     QPixmap charRightTex;
     QPixmap charUpTex;
     QPixmap charIdleTex;
-    QPixmap tileTex;      // Grass tile
-    QPixmap dirtTex;     // Dirt tile
-    QPixmap hoeTex;      // Hoe item
-    QPixmap seedTex;     // Seed item
-    QPixmap seed1Tex;    // Planted seed
+    QPixmap tileTex;  // Grass tile
+    QPixmap dirtTex;  // Dirt tile
+    QPixmap hoeTex;   // Hoe item
+    QPixmap seedTex;  // Seed item
+    QPixmap seed1Tex; // Planted seed
     QPixmap plantPhase1Tex;
     QPixmap plantPhase2Tex;
     QPixmap plantPhase3Tex;
 
     // Texture management
-    QPixmap loadTexture(const QString& path);
+    QPixmap loadTexture(const QString &path);
     bool loadAllTextures();
     void cleanupTextures();
 
     // Rendering
-    void renderTile(QPainter& painter, int tileX, int tileY, int screenX, int screenY);
-    void renderPlayer(QPainter& painter);
-    void renderItemInHand(QPainter& painter);
+    void renderTile(QPainter &painter, int tileX, int tileY, int screenX, int screenY);
+    void renderPlayer(QPainter &painter);
+    void renderItemInHand(QPainter &painter);
 
     // Input handling
     void handleInput();
-    std::map<int, bool> keys;  // Qt key codes
+    std::map<int, bool> keys; // Qt key codes
     bool mouseLeftPressed;
     bool mouseLeftPressedLastFrame;
 
     // Interaction
     void interactWithTile(int tileX, int tileY);
-    void getTileAtPlayer(int& tileX, int& tileY);
+    void getTileAtPlayer(int &tileX, int &tileY);
 
     // Game loop
     void update(float deltaTime);
-    void render(QPainter& painter);
-    
+    void render(QPainter &painter);
+
     // Timing
-    QElapsedTimer* elapsedTimer;
+    QElapsedTimer *elapsedTimer;
 
     // Crop growth
     void advanceGrowthCycle();

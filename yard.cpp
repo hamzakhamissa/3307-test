@@ -3,7 +3,8 @@
 
 all attributes should stay the same.
 */
-Yard::Yard() {
+Yard::Yard()
+{
     state = 0;
     type = "Yard";
     crops = nullptr;
@@ -12,46 +13,55 @@ Yard::Yard() {
 }
 
 // Gets the state of the itile object
-int Yard::getState(){
+int Yard::getState()
+{
     return state;
 }
 
 // Sets new state for the itile object
-void Yard::setState(int newstate){
+void Yard::setState(int newstate)
+{
     state = newstate;
 }
 
 // Gets the type of the itile object, should always be yard
-std::string Yard::getType(){
+std::string Yard::getType()
+{
     return type;
 }
 
 // Sets type of itile object, shouldn't have to be used
-void Yard::setType(std::string newType){
+void Yard::setType(std::string newType)
+{
     type = newType;
 }
 
 // Gets the current crop that the itile object holds
-ICrops* Yard::getCrop(){
+ICrops *Yard::getCrop()
+{
     return crops;
 }
 
 // Sets the crop that the itile object will hold
-void Yard::setCrop(ICrops* crop){
+void Yard::setCrop(ICrops *crop)
+{
     crops = crop;
 }
 
 // Checks if the itile object has a crop
-bool Yard::hasCrop(){
+bool Yard::hasCrop()
+{
     return ownsCrop;
 }
 
 // Checks if the itile object was watered
-bool Yard::getWatered(){
+bool Yard::getWatered()
+{
     return watered;
 }
 
 // Sets the itile object to be watered when the watering can is used on it, or to false when the day ends
-void Yard::setWatered(bool newWatered){
+void Yard::setWatered(bool newWatered)
+{
     watered = newWatered;
 }

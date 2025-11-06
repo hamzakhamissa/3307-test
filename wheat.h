@@ -3,7 +3,7 @@
 
 #include "icrops.h"
 
-    class Wheat : public ICrops
+class Wheat : public ICrops
 {
 public:
     Wheat();
@@ -19,7 +19,6 @@ public:
 
     void setHarvestable(bool ynHarvest) override;
     bool getHarvestable() override;
-
 };
 
 #endif // WHEAT_h
