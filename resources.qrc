@@ -8,8 +8,6 @@
         <file>assets/Corn.png</file>
         <file>assets/Cow_left.png</file>
         <file>assets/Cow_right.png</file>
-        <file>assets/Tomato_Stage_1.png</file>
-        <file>assets/Tomato_Stage_2.png</file>
         <file>assets/Tomato_seed.png</file>
         <file>assets/Tomato.png</file>
         <file>assets/Watering_Can.png</file>
@@ -29,5 +27,7 @@
         <file>assets/hoe.png</file>
         <file>assets/dirt.png</file>
         <file>assets/Down_character.png</file>
+        <file>assets/Tomato_Stage_1.png</file>
+        <file>assets/Tomato_Stage_2.png</file>
     </qresource>
 </RCC>

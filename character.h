@@ -2,44 +2,49 @@
 #define CHARACTER_H
 #include <vector>
 
-// #include <QLabel>  // Qt not configured in CMakeLists.txt yet
+#include <QWidget>
+#include <QLabel>
 
 #include "icrops.h"
 #include "itool.h"
 
-class Character
+class Character : public QLabel
 {
+    Q_OBJECT
 public:
-    Character();
+    Character(QWidget* parent = nullptr);
     ~Character();
 
-    virtual int getState() = 0;
-    virtual void setState() = 0;
+    int getState();
+    void setState(int newState);
 
-    virtual int getX() = 0;
-    virtual int getY() = 0;
-    virtual void setX() = 0;
-    virtual void setY() = 0;
+    int getX();
+    int getY();
+    void setX(int newX);
+    void setY(int newY);
 
-    virtual int getSpeed() = 0;
-    virtual void setSpeed() = 0;
+    int getSpeed() ;
+    void setSpeed(int newSpeed) ;
 
     //Need a fix to inventory, currently cannot hold animals
-    virtual std::vector<ICrops> getCropsInventory() = 0;
-    virtual std::vector<ITool> getToolInventory() = 0;
-    virtual void addCropsInventory(ICrops *crop) = 0;
-    virtual void addToolInventory(ITool *tool) = 0;
+    std::vector<ICrops> getCropsInventory() ;
+    std::vector<ITool> getToolInventory() ;
+    void addCropsInventory(ICrops *crop) ;
+    void addToolInventory(ITool *tool) ;
 
-    virtual void setMoney() = 0;
-    virtual int getMoney() = 0;
+    void setMoney(int newMoney) ;
+    int getMoney() ;
 
-    virtual void move() = 0;
+    void moveLeft() ;
+    void moveRight() ;
+    void moveUp() ;
+    void moveDown() ;
 
-    virtual bool isEquiped() = 0;
+    bool isEquiped() ;
 
-    virtual void interact() = 0;
+    void interact() ;
 
-    virtual void sleep() = 0;
+    void sleep() ;
 
 private:
     int xPosition;

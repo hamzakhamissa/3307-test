@@ -32,6 +32,7 @@ add_executable(assignment2
     character.h character.cpp
     game.h game.cpp
     resources.qrc
+    mainwindow.h mainwindow.cpp
 )
 
 # Link Qt libraries
