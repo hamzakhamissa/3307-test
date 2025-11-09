@@ -5,7 +5,7 @@
 
 class Corn : public ICrops
 {
-private:
+public:
     Corn();
     ~Corn();
 

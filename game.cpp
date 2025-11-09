@@ -1,40 +1,30 @@
 #include "game.h"
-#include <QElapsedTimer>
-#include <cmath>
+#include "itemtypeenum.h"
+#include "inventory.h"
 #include <iostream>
 
 Game::Game(QWidget *parent)
     : QWidget(parent)
     , gameTimer(nullptr)
     , running(false)
-    , playerX(400.0f)
-    , playerY(300.0f)
-    , playerSpeed(100.0f)
-    , playerDirection(DIR_DOWN)
-    , playerMoving(false)
+    , shopOpen(false)
+    , menuOpen(false)
+    , shopBuyMode(true)
+    , dayNumber(1)
+    , tiles(50, 50, TILE_SIZE)   // map dims here
     , cameraX(0.0f)
     , cameraY(0.0f)
-    , selectedSlot(0)
     , mouseLeftPressed(false)
     , mouseLeftPressedLastFrame(false)
     , elapsedTimer(nullptr)
 {
-    // Initialize tile map with grass
-    for (int y = 0; y < MAP_HEIGHT; y++) {
-        for (int x = 0; x < MAP_WIDTH; x++) {
-            tileMap[y][x] = TILE_GRASS;
-        }
-    }
+    // Create player
+    player = std::make_unique<Player>();
+    player->setPosition(400.0f, 300.0f);
+    player->setSpeed(100.0f);
 
-    // Initialize inventory: Slot 1 = Hoe, Slot 2 = Seed
-    hotbar[0] = ITEM_HOE;
-    hotbar[1] = ITEM_SEED;
-
-    // Set window properties
     setFixedSize(WINDOW_WIDTH, WINDOW_HEIGHT);
     setWindowTitle("Farmland - Farming Simulator");
-
-    // Enable keyboard focus
     setFocusPolicy(Qt::StrongFocus);
 }
 
@@ -42,18 +32,51 @@ Game::~Game() {}
 
 bool Game::init()
 {
-    // Load all textures
-    if (!loadAllTextures()) {
-        std::cerr << "Failed to load some textures!" << std::endl;
+    // Character & held-item textures
+    charDownTex.load(":/assets/assets/Down_character.png");
+    charLeftTex.load(":/assets/assets/Left_character.png");
+    charRightTex.load(":/assets/assets/Right_character.png");
+    charUpTex.load(":/assets/assets/Up_character.png");
+    charIdleTex.load(":/assets/assets/Idle_character.png");
+    hoeTex.load(":/assets/assets/hoe.png");
+    seedTex.load(":/assets/assets/Seed_1.png");
+    wateringCanTex.load(":/assets/assets/Watering_Can.png");
+    
+    // Seed textures
+    wheatSeedTex.load(":/assets/assets/Wheat_seed.png");
+    tomatoSeedTex.load(":/assets/assets/Tomato_seed.png");
+    cornSeedTex.load(":/assets/assets/Corn_seed.png");
+    
+    // Crop textures
+    wheatTex.load(":/assets/assets/Wheat.png");
+    tomatoTex.load(":/assets/assets/Tomato.png");
+    cornTex.load(":/assets/assets/Corn.png");
+    
+    // Animal product textures (using placeholder for now - may need to add to resources)
+    // milkTex and eggTex will be handled separately if needed
+    
+    // Animal textures (for shop display)
+    cowTex.load(":/assets/assets/Cow_right.png");
+    chickenTex.load(":/assets/assets/Chicken_right.png");
+
+    // Tileboard textures (board owns them)
+    if (!tiles.init(
+            ":/assets/assets/tile.png",               // grass
+            ":/assets/assets/dirt.png",               // dirt
+            ":/assets/assets/Seed_1.png",             // seed overlay
+            ":/assets/assets/Plant_1_Phase_1.png",
+            ":/assets/assets/Plant_1_Phase_2.png",
+            ":/assets/assets/Plant_1_Phase_3.png")) {
+        std::cerr << "Tileboard textures failed to load!\n";
         return false;
     }
 
-    // Create game timer for 60 FPS
+    // Timer
     gameTimer = new QTimer(this);
     connect(gameTimer, &QTimer::timeout, this, &Game::gameLoop);
-    gameTimer->start(16); // ~60 FPS (1000ms / 60 ≈ 16ms)
+    gameTimer->start(16);
 
-    // Initialize timing
+    // Timing
     elapsedTimer = new QElapsedTimer();
     elapsedTimer->start();
 
@@ -64,93 +87,37 @@ bool Game::init()
 void Game::start()
 {
     show();
-    if (init()) {
-        // Game loop is handled by QTimer
-    }
+    init();
 }
 
 void Game::gameLoop()
 {
-    if (!running) {
-        return;
-    }
+    if (!running) return;
 
-    // Calculate delta time
     static qint64 lastTime = -1;
     qint64 currentTime = elapsedTimer->elapsed();
-    float deltaTime;
+    float dt;
 
     if (lastTime < 0) {
-        // First frame, assume 60 FPS
-        deltaTime = 0.016f;
+        dt = 0.016f;
         lastTime = currentTime;
     } else {
-        deltaTime = (currentTime - lastTime) / 1000.0f; // Convert to seconds
+        dt = (currentTime - lastTime) / 1000.0f;
         lastTime = currentTime;
-
-        // Cap delta time to prevent large jumps
-        if (deltaTime > 0.1f)
-            deltaTime = 0.1f;
+        if (dt > 0.1f) dt = 0.1f;
     }
 
     handleInput();
-    update(deltaTime);
-    repaint(); // Trigger repaint
-}
-
-bool Game::loadAllTextures()
-{
-    charDownTex.load(":/assets/assets/Down_character.png");
-    charLeftTex.load(":/assets/assets/Left_character.png");
-    charRightTex.load(":/assets/assets/Right_character.png");
-    charUpTex.load(":/assets/assets/Up_character.png");
-    charIdleTex.load(":/assets/assets/Idle_character.png");
-    tileTex.load(":/assets/assets/tile.png");
-    dirtTex.load(":/assets/assets/dirt.png");
-    hoeTex.load(":/assets/assets/hoe.png");
-    seedTex.load(":/assets/assets/Seed_1.png");
-    seed1Tex.load(":/assets/assets/Seed_1.png"); // Same as seed for now
-    plantPhase1Tex.load(":/assets/assets/Plant_1_Phase_1.png");
-    plantPhase2Tex.load(":/assets/assets/Plant_1_Phase_2.png");
-    plantPhase3Tex.load(":/assets/assets/Plant_1_Phase_3.png");
-
-    // Check if all critical textures loaded
-    if (charDownTex.isNull() || tileTex.isNull() || dirtTex.isNull() || hoeTex.isNull()
-        || seedTex.isNull()) {
-        std::cerr << "Warning: Some critical textures failed to load!" << std::endl;
-        return false;
-    }
-
-    return true;
-}
-
-void Game::cleanupTextures()
-{
-    // QPixmap handles cleanup automatically, but we can clear them
-    charDownTex = QPixmap();
-    charLeftTex = QPixmap();
-    charRightTex = QPixmap();
-    charUpTex = QPixmap();
-    charIdleTex = QPixmap();
-    tileTex = QPixmap();
-    dirtTex = QPixmap();
-    hoeTex = QPixmap();
-    seedTex = QPixmap();
-    seed1Tex = QPixmap();
-    plantPhase1Tex = QPixmap();
-    plantPhase2Tex = QPixmap();
-    plantPhase3Tex = QPixmap();
+    update(dt);
+    repaint();
 }
 
 void Game::paintEvent(QPaintEvent *event)
 {
-    QPainter painter(this);
-    painter.setRenderHint(QPainter::Antialiasing);
-
-    // Clear screen with sky blue background
-    painter.fillRect(rect(), QColor(135, 206, 235));
-
-    render(painter);
+    QPainter p(this);
+    p.setRenderHint(QPainter::Antialiasing);
+    p.fillRect(rect(), QColor(135, 206, 235));
+    render(p);
 }
 
 void Game::keyPressEvent(QKeyEvent *event)
@@ -158,28 +125,66 @@ void Game::keyPressEvent(QKeyEvent *event)
     int key = event->key();
     keys[key] = true;
 
-    // ESC key to exit
     if (key == Qt::Key_Escape) {
-        running = false;
-        close();
+        if (shopOpen) {
+            closeShop();
+        } else if (menuOpen) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
     }
-    // T key to advance growth cycle
-    if (key == Qt::Key_T) {
-        advanceGrowthCycle();
+    if (key == Qt::Key_T) { advanceGrowthCycle(); } // Temporary - will be replaced with sleep
+    
+    // Menu interactions (check first so they take priority)
+    if (menuOpen) {
+        if (key == Qt::Key_1) {
+            saveGame(1);
+            closeMenu();
+        } else if (key == Qt::Key_2) {
+            loadGame(1);
+            closeMenu();
+        } else if (key == Qt::Key_3) {
+            closeMenu();
+            // Could exit game here if needed
+        }
     }
-    // Number keys for inventory slots
-    if (key == Qt::Key_1) {
-        selectedSlot = 0; // Hoe
+    // Shop interactions (check before inventory selection)
+    else if (shopOpen) {
+        // Toggle between buy and sell mode with Tab key
+        if (key == Qt::Key_Tab) {
+            shopBuyMode = !shopBuyMode;
+        }
+        
+        if (shopBuyMode) {
+            // Buy mode - keys 1-9 to buy items
+            auto buyableItems = market.getBuyableItems();
+            if (key >= Qt::Key_1 && key <= Qt::Key_9) {
+                int index = key - Qt::Key_1;
+                if (index < static_cast<int>(buyableItems.size())) {
+                    market.buy(player.get(), buyableItems[index].itemType, 1);
+                }
+            }
+        } else {
+            // Sell mode - keys 1-9 to sell items
+            auto sellableItems = market.getSellableItems(player.get());
+            if (key >= Qt::Key_1 && key <= Qt::Key_9) {
+                int index = key - Qt::Key_1;
+                if (index < static_cast<int>(sellableItems.size())) {
+                    market.sell(player.get(), sellableItems[index].itemType, 1);
+                }
+            }
+        }
     }
-    if (key == Qt::Key_2) {
-        selectedSlot = 1; // Seed
-    }
-    // E key for interaction
-    if (key == Qt::Key_E) {
-        int tileX, tileY;
-        getTileAtPlayer(tileX, tileY);
-        if (tileX >= 0 && tileX < MAP_WIDTH && tileY >= 0 && tileY < MAP_HEIGHT) {
-            interactWithTile(tileX, tileY);
+    // Normal game controls (only when shop/menu not open)
+    else {
+        // Inventory slot selection (1-9)
+        if (key >= Qt::Key_1 && key <= Qt::Key_9) {
+            player->setSelectedSlot(key - Qt::Key_1);
+        }
+        if (key == Qt::Key_E) { interactWithFrontTile(); }
+        if (key == Qt::Key_M) {
+            openShop();
         }
     }
 }
@@ -193,12 +198,7 @@ void Game::mousePressEvent(QMouseEvent *event)
 {
     if (event->button() == Qt::LeftButton) {
         mouseLeftPressed = true;
-        // Interact on click
-        int tileX, tileY;
-        getTileAtPlayer(tileX, tileY);
-        if (tileX >= 0 && tileX < MAP_WIDTH && tileY >= 0 && tileY < MAP_HEIGHT) {
-            interactWithTile(tileX, tileY);
-        }
+        interactWithFrontTile();
     }
 }
 
@@ -206,343 +206,322 @@ void Game::handleInput()
 {
     mouseLeftPressedLastFrame = mouseLeftPressed;
     mouseLeftPressed = false;
-    // Input is now handled by Qt event handlers
 }
 
 void Game::getTileAtPlayer(int &tileX, int &tileY)
 {
-    // Get tile in front of player based on direction
-    // Use CHARACTER_SIZE to get the actual center of the character sprite
-    int centerTileX = (int) (playerX + CHARACTER_SIZE / 2) / TILE_SIZE;
-    int centerTileY = (int) (playerY + CHARACTER_SIZE / 2) / TILE_SIZE;
-
-    // Adjust based on facing direction - get tile directly in front of character
-    switch (playerDirection) {
-    case DIR_UP:
-        tileX = centerTileX;
-        tileY = centerTileY - 1;
-        break;
-    case DIR_DOWN:
-        tileX = centerTileX;
-        tileY = centerTileY + 1;
-        break;
-    case DIR_LEFT:
-        tileX = centerTileX - 1;
-        tileY = centerTileY;
-        break;
-    case DIR_RIGHT:
-        tileX = centerTileX + 1;
-        tileY = centerTileY;
-        break;
-    }
+    player->getFrontTileIndices(TILE_SIZE, CHARACTER_SIZE, tileX, tileY);
 }
 
-void Game::interactWithTile(int tileX, int tileY)
+void Game::interactWithFrontTile()
 {
-    if (tileX < 0 || tileX >= MAP_WIDTH || tileY < 0 || tileY >= MAP_HEIGHT) {
-        return;
-    }
+    if (shopOpen || menuOpen) return; // Don't interact when UI is open
 
-    TileState &tile = tileMap[tileY][tileX];
-    ItemType selectedItem = hotbar[selectedSlot];
-
-    // Hoe interaction - till grass into dirt
-    if (selectedItem == ITEM_HOE && tile == TILE_GRASS) {
-        tile = TILE_DIRT;
-        std::cout << "Tilled ground at (" << tileX << ", " << tileY << ")" << std::endl;
-    }
-    // Seed interaction - plant seed on dirt
-    else if (selectedItem == ITEM_SEED && tile == TILE_DIRT) {
-        tile = TILE_SEEDED;
-        std::cout << "Planted seed at (" << tileX << ", " << tileY << ")" << std::endl;
-    }
-    // Harvest interaction - harvest fully grown plant
-    else if (tile == TILE_HARVESTABLE) {
-        tile = TILE_DIRT; // Return to dirt after harvest
-        std::cout << "Harvested crop at (" << tileX << ", " << tileY << ")" << std::endl;
+    int tx, ty;
+    getTileAtPlayer(tx, ty);
+    
+    // Debug output
+    std::cout << "Interacting at tile (" << tx << ", " << ty << ")" << std::endl;
+    std::cout << "Selected item: " << static_cast<int>(player->getSelectedItem()) << std::endl;
+    std::cout << "Selected slot: " << player->getSelectedSlot() << std::endl;
+    
+    if (tiles.inBounds(tx, ty)) {
+        ITiles* tile = tiles.getTile(tx, ty);
+        if (tile) {
+            std::cout << "Tile type: " << tile->getType() << ", State: " << tile->getState() << std::endl;
+        }
+        tiles.interactAt(tx, ty, player.get());
+    } else {
+        std::cout << "Tile out of bounds!" << std::endl;
     }
 }
 
 void Game::advanceGrowthCycle()
 {
-    std::cout << "Advancing growth cycle..." << std::endl;
-    for (int y = 0; y < MAP_HEIGHT; y++) {
-        for (int x = 0; x < MAP_WIDTH; x++) {
-            TileState &tile = tileMap[y][x];
-            // Advance growth stages
-            if (tile == TILE_SEEDED) {
-                tile = TILE_PLANT_PHASE_1;
-            } else if (tile == TILE_PLANT_PHASE_1) {
-                tile = TILE_PLANT_PHASE_2;
-            } else if (tile == TILE_PLANT_PHASE_2) {
-                tile = TILE_PLANT_PHASE_3;
-            } else if (tile == TILE_PLANT_PHASE_3) {
-                tile = TILE_HARVESTABLE;
-            }
-        }
-    }
+    tiles.advanceGrowth();
 }
 
 void Game::update(float deltaTime)
 {
-    // Player movement with WASD
-    float moveX = 0.0f, moveY = 0.0f;
-    PlayerDirection newDirection = playerDirection;
-
-    if (keys[Qt::Key_W] || keys[Qt::Key_Up]) {
-        moveY -= 1.0f;
-        newDirection = DIR_UP;
-    }
-    if (keys[Qt::Key_S] || keys[Qt::Key_Down]) {
-        moveY += 1.0f;
-        newDirection = DIR_DOWN;
-    }
-    if (keys[Qt::Key_A] || keys[Qt::Key_Left]) {
-        moveX -= 1.0f;
-        newDirection = DIR_LEFT;
-    }
-    if (keys[Qt::Key_D] || keys[Qt::Key_Right]) {
-        moveX += 1.0f;
-        newDirection = DIR_RIGHT;
+    if (!shopOpen && !menuOpen) {
+        player->updateFromKeys(keys, deltaTime);
+        player->clampToMap(tiles.width(), tiles.height(), TILE_SIZE, CHARACTER_SIZE);
     }
 
-    playerMoving = (moveX != 0.0f || moveY != 0.0f);
-    if (playerMoving) {
-        playerDirection = newDirection;
-    }
+    // Camera follow
+    cameraX = player->getX() + CHARACTER_SIZE / 2.0f - WINDOW_WIDTH / 2.0f;
+    cameraY = player->getY() + CHARACTER_SIZE / 2.0f - WINDOW_HEIGHT / 2.0f;
 
-    // Normalize diagonal movement
-    if (moveX != 0.0f && moveY != 0.0f) {
-        moveX *= 0.707f; // 1/sqrt(2)
-        moveY *= 0.707f;
-    }
-
-    // Update player position
-    playerX += moveX * playerSpeed * deltaTime;
-    playerY += moveY * playerSpeed * deltaTime;
-
-    // Keep player within map bounds - account for CHARACTER_SIZE
-    if (playerX < 0)
-        playerX = 0;
-    if (playerX > MAP_WIDTH * TILE_SIZE - CHARACTER_SIZE)
-        playerX = MAP_WIDTH * TILE_SIZE - CHARACTER_SIZE;
-    if (playerY < 0)
-        playerY = 0;
-    if (playerY > MAP_HEIGHT * TILE_SIZE - CHARACTER_SIZE)
-        playerY = MAP_HEIGHT * TILE_SIZE - CHARACTER_SIZE;
-
-    // Update camera to follow player (centered on character)
-    cameraX = playerX + CHARACTER_SIZE / 2.0f - WINDOW_WIDTH / 2.0f;
-    cameraY = playerY + CHARACTER_SIZE / 2.0f - WINDOW_HEIGHT / 2.0f;
-
-    // Clamp camera to map bounds
-    if (cameraX < 0)
-        cameraX = 0;
-    if (cameraX > MAP_WIDTH * TILE_SIZE - WINDOW_WIDTH)
-        cameraX = MAP_WIDTH * TILE_SIZE - WINDOW_WIDTH;
-    if (cameraY < 0)
-        cameraY = 0;
-    if (cameraY > MAP_HEIGHT * TILE_SIZE - WINDOW_HEIGHT)
-        cameraY = MAP_HEIGHT * TILE_SIZE - WINDOW_HEIGHT;
+    // Clamp camera
+    const float maxCamX = tiles.width()  * TILE_SIZE - WINDOW_WIDTH;
+    const float maxCamY = tiles.height() * TILE_SIZE - WINDOW_HEIGHT;
+    if (cameraX < 0) cameraX = 0; else if (cameraX > maxCamX) cameraX = maxCamX;
+    if (cameraY < 0) cameraY = 0; else if (cameraY > maxCamY) cameraY = maxCamY;
 }
 
 void Game::render(QPainter &painter)
 {
-    // Calculate which tiles to render (visible tiles only)
-    int startTileX = (int) (cameraX / TILE_SIZE);
-    int startTileY = (int) (cameraY / TILE_SIZE);
-    int endTileX = startTileX + (WINDOW_WIDTH / TILE_SIZE) + 2;
-    int endTileY = startTileY + (WINDOW_HEIGHT / TILE_SIZE) + 2;
+    // Tiles (board draws everything)
+    tiles.render(painter, cameraX, cameraY, WINDOW_WIDTH, WINDOW_HEIGHT);
 
-    // Clamp to map bounds
-    if (startTileX < 0)
-        startTileX = 0;
-    if (startTileY < 0)
-        startTileY = 0;
-    if (endTileX > MAP_WIDTH)
-        endTileX = MAP_WIDTH;
-    if (endTileY > MAP_HEIGHT)
-        endTileY = MAP_HEIGHT;
-
-    // Render tiles
-    for (int y = startTileY; y < endTileY; y++) {
-        for (int x = startTileX; x < endTileX; x++) {
-            int screenX = x * TILE_SIZE - (int) cameraX;
-            int screenY = y * TILE_SIZE - (int) cameraY;
-            renderTile(painter, x, y, screenX, screenY);
-        }
+    // Draw tile indicator (before character so it appears underneath)
+    if (!shopOpen && !menuOpen) {
+        renderTileIndicator(painter);
     }
 
-    // Render player
-    renderPlayer(painter);
+    // Character (sprite + held item)
+    ItemTypeEnum selectedItemEnum = player->getSelectedItem();
+    ItemType selectedItem = player->convertItemTypeEnumToItemType(selectedItemEnum);
 
-    // Render item in hand
-    renderItemInHand(painter);
+    player->renderCharacter(painter,
+                            charDownTex, charLeftTex, charRightTex, charUpTex, charIdleTex,
+                            cameraX, cameraY, CHARACTER_SIZE);
+    player->renderHeldItem(painter, selectedItem, hoeTex, seedTex, wateringCanTex,
+                           cameraX, cameraY, CHARACTER_SIZE);
+
+    // Render UI overlays
+    renderInventoryUI(painter);
+
+    if (shopOpen) {
+        renderShopUI(painter);
+    }
+
+    if (menuOpen) {
+        renderMenuUI(painter);
+    }
 }
 
-void Game::renderTile(QPainter &painter, int tileX, int tileY, int screenX, int screenY)
-{
-    QRect destRect(screenX, screenY, TILE_SIZE, TILE_SIZE);
-    TileState tileState = tileMap[tileY][tileX];
-    QPixmap *textureToRender = nullptr;
+void Game::openShop() {
+    shopOpen = true;
+}
 
-    switch (tileState) {
-    case TILE_GRASS:
-        textureToRender = &tileTex;
-        break;
-    case TILE_DIRT:
-        textureToRender = &dirtTex;
-        break;
-    case TILE_SEEDED:
-        // Render dirt with seed on top
-        if (!dirtTex.isNull()) {
-            painter.drawPixmap(destRect, dirtTex);
+void Game::closeShop() {
+    shopOpen = false;
+}
+
+void Game::openMenu() {
+    menuOpen = true;
+}
+
+void Game::closeMenu() {
+    menuOpen = false;
+}
+
+void Game::saveGame(int saveSlot) {
+    QString savePath = Menu::getDefaultSavePath(saveSlot);
+    menu.save(savePath, player.get(), &tiles, dayNumber);
+}
+
+void Game::loadGame(int saveSlot) {
+    QString savePath = Menu::getDefaultSavePath(saveSlot);
+    if (Menu::saveExists(saveSlot)) {
+        menu.load(savePath, player.get(), &tiles, dayNumber);
+    }
+}
+
+void Game::renderInventoryUI(QPainter& painter)
+{
+    // Draw inventory bar at bottom of screen
+    const int invBarY = WINDOW_HEIGHT - 80;
+    const int slotSize = 60;
+    const int slotSpacing = 5;
+    const int startX = (WINDOW_WIDTH - (Inventory::INVENTORY_SIZE * (slotSize + slotSpacing) - slotSpacing)) / 2;
+
+    // Background
+    painter.fillRect(0, invBarY, WINDOW_WIDTH, 80, QColor(50, 50, 50, 200));
+
+    Inventory* inv = player->getInventory();
+    if (!inv) return;
+
+    // Changed 'slots' to 'invSlots' to avoid Qt macro conflict
+    const std::vector<InventorySlot>& invSlots = inv->getSlots();
+    int selectedSlot = player->getSelectedSlot();
+
+    for (int i = 0; i < Inventory::INVENTORY_SIZE && i < static_cast<int>(invSlots.size()); ++i) {
+        int x = startX + i * (slotSize + slotSpacing);
+        int y = invBarY + 10;
+
+        // Draw slot background
+        QColor slotColor = (i == selectedSlot) ? QColor(255, 255, 0, 150) : QColor(100, 100, 100, 150);
+        painter.fillRect(x, y, slotSize, slotSize, slotColor);
+        painter.setPen(Qt::white);
+        painter.drawRect(x, y, slotSize, slotSize);
+
+        // Draw item sprite and info
+        if (invSlots[i].itemType != ItemTypeEnum::NONE && invSlots[i].quantity > 0) {
+            // Get sprite for this item
+            const QPixmap* itemSprite = getItemSprite(invSlots[i].itemType);
+            if (itemSprite && !itemSprite->isNull()) {
+                painter.drawPixmap(x + 2, y + 2, slotSize - 4, slotSize - 4, *itemSprite);
+            }
         }
-        if (!seed1Tex.isNull()) {
-            painter.drawPixmap(destRect, seed1Tex);
-        }
-        return; // Early return since we rendered both
-    case TILE_PLANT_PHASE_1:
-        if (!dirtTex.isNull()) {
-            painter.drawPixmap(destRect, dirtTex);
-        }
-        if (!plantPhase1Tex.isNull()) {
-            painter.drawPixmap(destRect, plantPhase1Tex);
-        }
-        return;
-    case TILE_PLANT_PHASE_2:
-        if (!dirtTex.isNull()) {
-            painter.drawPixmap(destRect, dirtTex);
-        }
-        if (!plantPhase2Tex.isNull()) {
-            painter.drawPixmap(destRect, plantPhase2Tex);
-        }
-        return;
-    case TILE_PLANT_PHASE_3:
-        if (!dirtTex.isNull()) {
-            painter.drawPixmap(destRect, dirtTex);
-        }
-        if (!plantPhase3Tex.isNull()) {
-            painter.drawPixmap(destRect, plantPhase3Tex);
-        }
-        return;
-    case TILE_HARVESTABLE:
-        if (!dirtTex.isNull()) {
-            painter.drawPixmap(destRect, dirtTex);
-        }
-        if (!plantPhase3Tex.isNull()) {
-            painter.drawPixmap(destRect, plantPhase3Tex);
-        }
-        return;
+        
+        // Draw slot number (1-9) in bottom right corner
+        painter.setPen(Qt::white);
+        painter.setFont(QFont("Arial", 12, QFont::Bold));
+        painter.drawText(x + slotSize - 18, y + slotSize - 5, QString::number(i + 1));
     }
 
-    // Render base tile texture
-    if (textureToRender && !textureToRender->isNull()) {
-        painter.drawPixmap(destRect, *textureToRender);
+    // Draw money
+    painter.setPen(Qt::white);
+    painter.setFont(QFont("Arial", 14, QFont::Bold));
+    painter.drawText(10, invBarY + 30, QString("Money: $%1").arg(player->getMoney()));
+}
+
+void Game::renderShopUI(QPainter& painter)
+{
+    // Draw shop overlay
+    painter.fillRect(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT, QColor(0, 0, 0, 200));
+    
+    const int shopWidth = 600;
+    const int shopHeight = 500;
+    const int shopX = (WINDOW_WIDTH - shopWidth) / 2;
+    const int shopY = (WINDOW_HEIGHT - shopHeight) / 2;
+    
+    // Shop background
+    painter.fillRect(shopX, shopY, shopWidth, shopHeight, QColor(100, 80, 60));
+    painter.setPen(Qt::white);
+    painter.setFont(QFont("Arial", 20, QFont::Bold));
+    painter.drawText(shopX + 20, shopY + 30, "SHOP");
+    
+    // Mode indicator
+    painter.setFont(QFont("Arial", 14, QFont::Bold));
+    if (shopBuyMode) {
+        painter.setPen(QColor(200, 255, 200));
+        painter.drawText(shopX + shopWidth - 150, shopY + 30, "[BUY MODE]");
     } else {
-        // Fallback to colored rectangle if texture not loaded
-        painter.fillRect(destRect, QColor(128, 128, 128));
+        painter.setPen(QColor(255, 200, 200));
+        painter.drawText(shopX + shopWidth - 150, shopY + 30, "[SELL MODE]");
     }
-}
-
-void Game::renderPlayer(QPainter &painter)
-{
-    // Calculate player position on screen
-    int screenX = (int) (playerX - cameraX);
-    int screenY = (int) (playerY - cameraY);
-
-    // Character sprite size
-    QRect destRect(screenX, screenY, CHARACTER_SIZE, CHARACTER_SIZE);
-    QPixmap *charTex = &charIdleTex; // Default to idle
-
-    // Select character sprite based on direction and movement
-    if (playerMoving) {
-        switch (playerDirection) {
-        case DIR_DOWN:
-            charTex = &charDownTex;
-            break;
-        case DIR_LEFT:
-            charTex = &charLeftTex;
-            break;
-        case DIR_RIGHT:
-            charTex = &charRightTex;
-            break;
-        case DIR_UP:
-            charTex = &charUpTex;
-            break;
+    painter.setPen(Qt::white);
+    
+    const int itemHeight = 40;
+    const int iconSize = 35;
+    int yPos = shopY + 70;
+    painter.setFont(QFont("Arial", 12));
+    
+    if (shopBuyMode) {
+        // Draw Buy section
+        auto buyableItems = market.getBuyableItems();
+        
+        for (size_t i = 0; i < buyableItems.size() && i < 9; ++i) {
+            const auto& item = buyableItems[i];
+            int itemY = yPos + static_cast<int>(i) * itemHeight;
+            
+            // Draw item icon
+            const QPixmap* itemSprite = getItemSprite(item.itemType);
+            if (itemSprite && !itemSprite->isNull()) {
+                painter.drawPixmap(shopX + 30, itemY + 2, iconSize, iconSize, *itemSprite);
+            }
+            
+            // Draw item name and price
+            QString itemText = QString("%1 - $%2").arg(QString::fromStdString(item.name)).arg(item.buyPrice);
+            painter.drawText(shopX + 75, itemY + 25, itemText);
+            
+            // Draw buy button indicator
+            painter.setPen(QColor(200, 255, 200));
+            painter.drawText(shopX + 350, itemY + 25, QString("[%1]").arg(i + 1));
+            painter.setPen(Qt::white);
+        }
+    } else {
+        // Draw Sell section
+        auto sellableItems = market.getSellableItems(player.get());
+        
+        for (size_t i = 0; i < sellableItems.size() && i < 9; ++i) {
+            const auto& item = sellableItems[i];
+            int itemY = yPos + static_cast<int>(i) * itemHeight;
+            
+            // Draw item icon - use sprites for all items
+            const QPixmap* itemSprite = getItemSprite(item.itemType);
+            if (itemSprite && !itemSprite->isNull()) {
+                painter.drawPixmap(shopX + 30, itemY + 2, iconSize, iconSize, *itemSprite);
+            }
+            
+            // Draw item name, price, and quantity
+            int quantity = player->getItemCount(item.itemType);
+            QString itemText = QString("%1 - $%2 (x%3)").arg(QString::fromStdString(item.name))
+                              .arg(item.sellPrice).arg(quantity);
+            painter.drawText(shopX + 75, itemY + 25, itemText);
+            
+            // Draw sell button indicator
+            painter.setPen(QColor(255, 200, 200));
+            painter.drawText(shopX + 400, itemY + 25, QString("[%1]").arg(i + 1));
+            painter.setPen(Qt::white);
         }
     }
-
-    // Fallback if texture not loaded
-    if (charTex->isNull()) {
-        charTex = &charIdleTex;
-    }
-    if (charTex->isNull()) {
-        // Ultimate fallback - colored rectangle
-        painter.fillRect(destRect, QColor(255, 0, 0));
-        return;
-    }
-
-    painter.drawPixmap(destRect, *charTex);
+    
+    // Instructions
+    painter.setFont(QFont("Arial", 10));
+    painter.drawText(shopX + 20, shopY + shopHeight - 60, "Press TAB to switch between Buy/Sell");
+    painter.drawText(shopX + 20, shopY + shopHeight - 40, "Press 1-9 to buy/sell items");
+    painter.drawText(shopX + 20, shopY + shopHeight - 20, "Press M or ESC to close shop");
 }
 
-void Game::renderItemInHand(QPainter &painter)
-{
-    ItemType selectedItem = hotbar[selectedSlot];
-    if (selectedItem == ITEM_NONE)
-        return;
-
-    // Calculate position next to player based on direction
-    int screenX = (int) (playerX - cameraX);
-    int screenY = (int) (playerY - cameraY);
-    int offsetX = 0, offsetY = 0;
-
-    // Position item based on facing direction - use CHARACTER_SIZE for proper positioning
-    switch (playerDirection) {
-    case DIR_UP:
-        offsetX = CHARACTER_SIZE / 4;
-        offsetY = -CHARACTER_SIZE / 3; // Slightly above character
-        break;
-    case DIR_DOWN:
-        offsetX = -CHARACTER_SIZE / 4;
-        offsetY = CHARACTER_SIZE / 3; // Slightly below character
-        break;
-    case DIR_LEFT:
-        offsetX = -CHARACTER_SIZE / 3; // Slightly to the left
-        offsetY = CHARACTER_SIZE / 4;
-        break;
-    case DIR_RIGHT:
-        offsetX = CHARACTER_SIZE / 3; // Slightly to the right
-        offsetY = CHARACTER_SIZE / 4;
-        break;
-    }
-
-    // Item size should scale with character size
-    int itemSize = CHARACTER_SIZE / 2;
-
-    QRect destRect(screenX + CHARACTER_SIZE / 2 + offsetX
-                       - itemSize / 2, // Center on character + offset
-                   screenY + CHARACTER_SIZE / 2 + offsetY - itemSize / 2,
-                   itemSize,
-                   itemSize);
-
-    QPixmap *itemTex = nullptr;
-    if (selectedItem == ITEM_HOE && !hoeTex.isNull()) {
-        itemTex = &hoeTex;
-    } else if (selectedItem == ITEM_SEED && !seedTex.isNull()) {
-        itemTex = &seedTex;
-    }
-
-    if (itemTex) {
-        painter.drawPixmap(destRect, *itemTex);
+const QPixmap* Game::getItemSprite(ItemTypeEnum itemType) const {
+    switch (itemType) {
+        case ItemTypeEnum::HOE: return &hoeTex;
+        case ItemTypeEnum::WATERING_CAN: return &wateringCanTex;
+        case ItemTypeEnum::WHEAT_SEED: return &wheatSeedTex;
+        case ItemTypeEnum::TOMATO_SEED: return &tomatoSeedTex;
+        case ItemTypeEnum::CORN_SEED: return &cornSeedTex;
+        case ItemTypeEnum::WHEAT: return &wheatTex;
+        case ItemTypeEnum::TOMATO: return &tomatoTex;
+        case ItemTypeEnum::CORN: return &cornTex;
+        case ItemTypeEnum::COW: return &cowTex;
+        case ItemTypeEnum::CHICKEN: return &chickenTex;
+        default: return nullptr;
     }
 }
 
-QPixmap Game::loadTexture(const QString &path)
+void Game::renderMenuUI(QPainter& painter)
 {
-    QPixmap pixmap(path);
-    if (pixmap.isNull()) {
-        std::cerr << "Unable to load image " << path.toStdString() << "!" << std::endl;
-    }
-    return pixmap;
+    // Draw menu overlay
+    painter.fillRect(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT, QColor(0, 0, 0, 200));
+    
+    const int menuWidth = 400;
+    const int menuHeight = 300;
+    const int menuX = (WINDOW_WIDTH - menuWidth) / 2;
+    const int menuY = (WINDOW_HEIGHT - menuHeight) / 2;
+    
+    // Menu background
+    painter.fillRect(menuX, menuY, menuWidth, menuHeight, QColor(60, 60, 80));
+    painter.setPen(Qt::white);
+    painter.setFont(QFont("Arial", 20, QFont::Bold));
+    painter.drawText(menuX + 20, menuY + 30, "MENU");
+    
+    // Menu options
+    painter.setFont(QFont("Arial", 14));
+    int yPos = menuY + 70;
+    painter.drawText(menuX + 20, yPos, "1. Save Game");
+    yPos += 30;
+    painter.drawText(menuX + 20, yPos, "2. Load Game");
+    yPos += 30;
+    painter.drawText(menuX + 20, yPos, "3. Exit");
+    
+    // Instructions
+    painter.setFont(QFont("Arial", 10));
+    painter.drawText(menuX + 20, menuY + menuHeight - 40, "Press 1-3 to select, ESC to close");
+}
+
+void Game::renderTileIndicator(QPainter& painter)
+{
+    // Get the tile the player is facing
+    int tileX, tileY;
+    getTileAtPlayer(tileX, tileY);
+
+    // Check if tile is valid
+    if (!tiles.inBounds(tileX, tileY)) return;
+
+    // Calculate screen position of the tile
+    int screenX = tileX * TILE_SIZE - static_cast<int>(cameraX);
+    int screenY = tileY * TILE_SIZE - static_cast<int>(cameraY);
+
+    // Draw a colored border around the target tile
+    painter.setPen(QPen(QColor(255, 255, 0, 200), 3)); // Yellow border, 3px thick
+    painter.setBrush(Qt::NoBrush); // No fill
+    painter.drawRect(screenX, screenY, TILE_SIZE, TILE_SIZE);
+
+    // Optional: Draw a semi-transparent overlay
+    QColor overlayColor(255, 255, 0, 50); // Yellow with 50 alpha
+    painter.fillRect(screenX, screenY, TILE_SIZE, TILE_SIZE, overlayColor);
 }

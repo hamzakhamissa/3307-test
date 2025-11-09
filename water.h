@@ -3,7 +3,7 @@
 
 #include "itiles.h"
 
-class Water : ITiles
+class Water : public ITiles
 {
 public:
     Water();

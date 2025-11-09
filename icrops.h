@@ -1,21 +1,18 @@
 #ifndef ICROPS_H
 #define ICROPS_H
+
 #include <string>
 
-class ICrops
-{
+class ICrops {
 public:
     ICrops();
-    ~ICrops();
+    virtual ~ICrops();  // CRITICAL: Must be virtual for interface
 
     virtual int getState() = 0;
     virtual void setState() = 0;
-
     virtual std::string getType() = 0;
-
     virtual int getGrowthSpeed() = 0;
     virtual void setGrowthSpeed(int speed) = 0;
-
     virtual void setHarvestable(bool ynHarvest) = 0;
     virtual bool getHarvestable() = 0;
 

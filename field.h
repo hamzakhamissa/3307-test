@@ -3,8 +3,8 @@
 
 #include "itiles.h"
 
-class Field : ITiles
-{
+// Plantable tile - State: 0=grass, 1=tilled, 2=planted
+class Field : public ITiles {
 public:
     Field();
     ~Field();
@@ -15,12 +15,21 @@ public:
     std::string getType() override;
     void setType(std::string newType) override;
 
-    void setCrop(ICrops *crop) override;
+    void setCrop(ICrops *crop) override; // updates ownsCrop
     ICrops *getCrop() override;
     bool hasCrop() override;
 
     bool getWatered() override;
     void setWatered(bool newWatered) override;
+
+    // Additional helper methods for stronger Field class
+    bool canTill() const;      // Can this field be tilled?
+    bool canPlant() const;      // Can a crop be planted here?
+    bool canWater() const;      // Can this field be watered?
+    bool canHarvest() const;    // Is there a harvestable crop?
+
+private:
+    void updateOwnsCrop();      // Internal helper to sync ownsCrop flag
 };
 
 #endif // FIELD_H

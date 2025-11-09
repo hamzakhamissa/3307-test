@@ -14,9 +14,8 @@ set(CMAKE_AUTORCC ON)
 
 add_executable(assignment2
     main.cpp
-    icrops.h
+    icrops.h icrops.cpp
     corn.h corn.cpp
-    icrops.cpp
     itiles.h itiles.cpp
     field.h field.cpp
     itool.h itool.cpp
@@ -30,9 +29,16 @@ add_executable(assignment2
     chicken.h chicken.cpp
     farminghoe.h farminghoe.cpp
     character.h character.cpp
+    player.h player.cpp
+    itemtypeenum.h
+    inventory.h inventory.cpp
+    iinteract.h iinteract.cpp
+    market.h market.cpp
+    menu.h menu.cpp
     game.h game.cpp
     resources.qrc
     mainwindow.h mainwindow.cpp
+    tileboard.h tileboard.cpp
 )
 
 # Link Qt libraries

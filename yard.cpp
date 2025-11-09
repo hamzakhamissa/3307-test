@@ -1,10 +1,6 @@
 #include "yard.h"
-/* Constructor for the water class, sets appropriate attributes, acts as an obsatcle,
 
-all attributes should stay the same.
-*/
-Yard::Yard()
-{
+Yard::Yard() {
     state = 0;
     type = "Yard";
     crops = nullptr;
@@ -12,56 +8,21 @@ Yard::Yard()
     watered = false;
 }
 
-// Gets the state of the itile object
-int Yard::getState()
-{
-    return state;
-}
+int Yard::getState() { return state; }
+void Yard::setState(int newState) { state = newState; }
 
-// Sets new state for the itile object
-void Yard::setState(int newstate)
-{
-    state = newstate;
-}
+std::string Yard::getType() { return type; }
+void Yard::setType(std::string newType) { type = std::move(newType); }
 
-// Gets the type of the itile object, should always be yard
-std::string Yard::getType()
-{
-    return type;
+// Not plantable: ignore crop assignment and always report no crop
+void Yard::setCrop(ICrops * /*crop*/) {
+    crops = nullptr;
+    ownsCrop = false;
 }
+ICrops *Yard::getCrop() { return nullptr; }
+bool Yard::hasCrop() { return false; }
 
-// Sets type of itile object, shouldn't have to be used
-void Yard::setType(std::string newType)
-{
-    type = newType;
-}
+bool Yard::getWatered() { return watered; }
+void Yard::setWatered(bool newWatered) { watered = newWatered; }
 
-// Gets the current crop that the itile object holds
-ICrops *Yard::getCrop()
-{
-    return crops;
-}
-
-// Sets the crop that the itile object will hold
-void Yard::setCrop(ICrops *crop)
-{
-    crops = crop;
-}
-
-// Checks if the itile object has a crop
-bool Yard::hasCrop()
-{
-    return ownsCrop;
-}
-
-// Checks if the itile object was watered
-bool Yard::getWatered()
-{
-    return watered;
-}
-
-// Sets the itile object to be watered when the watering can is used on it, or to false when the day ends
-void Yard::setWatered(bool newWatered)
-{
-    watered = newWatered;
-}
+Yard::~Yard() {}

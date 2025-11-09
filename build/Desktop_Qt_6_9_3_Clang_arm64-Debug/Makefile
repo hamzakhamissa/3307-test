@@ -419,6 +419,54 @@ icrops.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/icrops.cpp.s
 .PHONY : icrops.cpp.s
 
+iinteract.o: iinteract.cpp.o
+.PHONY : iinteract.o
+
+# target to build an object file
+iinteract.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/iinteract.cpp.o
+.PHONY : iinteract.cpp.o
+
+iinteract.i: iinteract.cpp.i
+.PHONY : iinteract.i
+
+# target to preprocess a source file
+iinteract.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/iinteract.cpp.i
+.PHONY : iinteract.cpp.i
+
+iinteract.s: iinteract.cpp.s
+.PHONY : iinteract.s
+
+# target to generate assembly for a file
+iinteract.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/iinteract.cpp.s
+.PHONY : iinteract.cpp.s
+
+inventory.o: inventory.cpp.o
+.PHONY : inventory.o
+
+# target to build an object file
+inventory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/inventory.cpp.o
+.PHONY : inventory.cpp.o
+
+inventory.i: inventory.cpp.i
+.PHONY : inventory.i
+
+# target to preprocess a source file
+inventory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/inventory.cpp.i
+.PHONY : inventory.cpp.i
+
+inventory.s: inventory.cpp.s
+.PHONY : inventory.s
+
+# target to generate assembly for a file
+inventory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/inventory.cpp.s
+.PHONY : inventory.cpp.s
+
 itiles.o: itiles.cpp.o
 .PHONY : itiles.o
 
@@ -490,6 +538,126 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+mainwindow.o: mainwindow.cpp.o
+.PHONY : mainwindow.o
+
+# target to build an object file
+mainwindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/mainwindow.cpp.o
+.PHONY : mainwindow.cpp.o
+
+mainwindow.i: mainwindow.cpp.i
+.PHONY : mainwindow.i
+
+# target to preprocess a source file
+mainwindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/mainwindow.cpp.i
+.PHONY : mainwindow.cpp.i
+
+mainwindow.s: mainwindow.cpp.s
+.PHONY : mainwindow.s
+
+# target to generate assembly for a file
+mainwindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/mainwindow.cpp.s
+.PHONY : mainwindow.cpp.s
+
+market.o: market.cpp.o
+.PHONY : market.o
+
+# target to build an object file
+market.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/market.cpp.o
+.PHONY : market.cpp.o
+
+market.i: market.cpp.i
+.PHONY : market.i
+
+# target to preprocess a source file
+market.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/market.cpp.i
+.PHONY : market.cpp.i
+
+market.s: market.cpp.s
+.PHONY : market.s
+
+# target to generate assembly for a file
+market.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/market.cpp.s
+.PHONY : market.cpp.s
+
+menu.o: menu.cpp.o
+.PHONY : menu.o
+
+# target to build an object file
+menu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/menu.cpp.o
+.PHONY : menu.cpp.o
+
+menu.i: menu.cpp.i
+.PHONY : menu.i
+
+# target to preprocess a source file
+menu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/menu.cpp.i
+.PHONY : menu.cpp.i
+
+menu.s: menu.cpp.s
+.PHONY : menu.s
+
+# target to generate assembly for a file
+menu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/menu.cpp.s
+.PHONY : menu.cpp.s
+
+player.o: player.cpp.o
+.PHONY : player.o
+
+# target to build an object file
+player.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/player.cpp.o
+.PHONY : player.cpp.o
+
+player.i: player.cpp.i
+.PHONY : player.i
+
+# target to preprocess a source file
+player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/player.cpp.i
+.PHONY : player.cpp.i
+
+player.s: player.cpp.s
+.PHONY : player.s
+
+# target to generate assembly for a file
+player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/player.cpp.s
+.PHONY : player.cpp.s
+
+tileboard.o: tileboard.cpp.o
+.PHONY : tileboard.o
+
+# target to build an object file
+tileboard.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/tileboard.cpp.o
+.PHONY : tileboard.cpp.o
+
+tileboard.i: tileboard.cpp.i
+.PHONY : tileboard.i
+
+# target to preprocess a source file
+tileboard.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/tileboard.cpp.i
+.PHONY : tileboard.cpp.i
+
+tileboard.s: tileboard.cpp.s
+.PHONY : tileboard.s
+
+# target to generate assembly for a file
+tileboard.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/tileboard.cpp.s
+.PHONY : tileboard.cpp.s
 
 tomato.o: tomato.cpp.o
 .PHONY : tomato.o
@@ -655,6 +823,12 @@ help:
 	@echo "... icrops.o"
 	@echo "... icrops.i"
 	@echo "... icrops.s"
+	@echo "... iinteract.o"
+	@echo "... iinteract.i"
+	@echo "... iinteract.s"
+	@echo "... inventory.o"
+	@echo "... inventory.i"
+	@echo "... inventory.s"
 	@echo "... itiles.o"
 	@echo "... itiles.i"
 	@echo "... itiles.s"
@@ -664,6 +838,21 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... mainwindow.o"
+	@echo "... mainwindow.i"
+	@echo "... mainwindow.s"
+	@echo "... market.o"
+	@echo "... market.i"
+	@echo "... market.s"
+	@echo "... menu.o"
+	@echo "... menu.i"
+	@echo "... menu.s"
+	@echo "... player.o"
+	@echo "... player.i"
+	@echo "... player.s"
+	@echo "... tileboard.o"
+	@echo "... tileboard.i"
+	@echo "... tileboard.s"
 	@echo "... tomato.o"
 	@echo "... tomato.i"
 	@echo "... tomato.s"

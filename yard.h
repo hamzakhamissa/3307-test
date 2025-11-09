@@ -3,8 +3,8 @@
 
 #include "itiles.h"
 
-class Yard : ITiles
-{
+// Non-plantable walking area
+class Yard : public ITiles {
 public:
     Yard();
     ~Yard();
@@ -15,9 +15,9 @@ public:
     std::string getType() override;
     void setType(std::string newType) override;
 
-    void setCrop(ICrops *crop) override;
-    ICrops *getCrop() override;
-    bool hasCrop() override;
+    void setCrop(ICrops *crop) override; // no-op (not plantable)
+    ICrops *getCrop() override;          // always nullptr
+    bool hasCrop() override;             // always false
 
     bool getWatered() override;
     void setWatered(bool newWatered) override;

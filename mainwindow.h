@@ -1,22 +1,23 @@
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
+// #ifndef MAINWINDOW_H
+// #define MAINWINDOW_H
 
-#include <QMainWindow>
-#include <QKeyEvent>
-#include "Character.h"
+// #include <QKeyEvent>
+// #include <QMainWindow>
+// #include "character.h"
 
-class MainWindow : public QMainWindow {
-    Q_OBJECT
+// class MainWindow : public QMainWindow
+// {
+//     Q_OBJECT
 
-private:
-    Character* character;
+// private:
+//     Character *character;
 
-public:
-    explicit MainWindow(QWidget* parent = nullptr);
-    ~MainWindow();
+// public:
+//     explicit MainWindow(QWidget *parent = nullptr);
+//     ~MainWindow();
 
-protected:
-    void keyPressEvent(QKeyEvent* event) override;
-};
+// protected:
+//     void keyPressEvent(QKeyEvent *event) override;
+// };
 
-#endif // MAINWINDOW_H
+// #endif // MAINWINDOW_H

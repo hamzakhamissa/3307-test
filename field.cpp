@@ -1,66 +1,77 @@
 #include "field.h"
 
-// Constructor for field object, sets appropriate attributes, uses setter injection
-Field::Field()
-{
-    state = 0;
+Field::Field() {
+    state = 0;  // 0 = grass (untilled), 1 = tilled, 2 = planted
     type = "Field";
     crops = nullptr;
     ownsCrop = false;
     watered = false;
 }
 
-// Gets the state of the itile object
-int Field::getState()
-{
-    return state;
+Field::~Field() {
+    // Clean up crop if we own it
+    if (crops) {
+        delete crops;
+        crops = nullptr;
+    }
 }
 
-// Sets new state for the itile object
-void Field::setState(int newstate)
-{
-    state = newstate;
+int Field::getState() { return state; }
+
+void Field::setState(int newState) {
+    state = newState;
+    // If state is reset to 0 (grass), remove crop if present
+    if (state == 0 && crops) {
+        delete crops;
+        crops = nullptr;
+        ownsCrop = false;
+    }
 }
 
-// Gets the type of the itile object, should always be field
-std::string Field::getType()
-{
-    return type;
-}
+std::string Field::getType() { return type; }
+void Field::setType(std::string newType) { type = std::move(newType); }
 
-// Sets type of itile object, shouldn't have to be used
-void Field::setType(std::string newType)
-{
-    type = newType;
-}
-
-// Gets the current crop that the itile object holds
-ICrops *Field::getCrop()
-{
-    return crops;
-}
-
-// Sets the crop that the itile object will hold
-void Field::setCrop(ICrops *crop)
-{
+void Field::setCrop(ICrops *crop) {
+    // Clean up old crop if present
+    if (crops && crops != crop) {
+        delete crops;
+    }
     crops = crop;
-    ownsCrop = (crop != nullptr);
+    updateOwnsCrop();
+    if (crop) {
+        state = 2; // Field is now planted
+    }
 }
 
-// Checks if the itile object has a crop
-bool Field::hasCrop()
-{
+ICrops *Field::getCrop() { return crops; }
+
+bool Field::hasCrop() {
+    updateOwnsCrop(); // Ensure flag is correct
     return ownsCrop;
 }
 
-// Checks if the itile object was watered
-bool Field::getWatered()
-{
-    return watered;
+bool Field::getWatered() { return watered; }
+
+void Field::setWatered(bool newWatered) {
+    watered = newWatered;
 }
 
-// Sets the itile object to be watered when the watering can is used on it, or to false when the day ends
-void Field::setWatered(bool newWatered)
-{
-    watered = newWatered;
+bool Field::canTill() const {
+    return state == 0; // Can only till grass
+}
+
+bool Field::canPlant() const {
+    return state == 1 && !ownsCrop; // Must be tilled and have no crop
+}
+
+bool Field::canWater() const {
+    return state >= 1 && !watered; // Can water tilled or planted fields that aren't already watered
+}
+
+bool Field::canHarvest() const {
+    return ownsCrop && crops && crops->getHarvestable();
+}
+
+void Field::updateOwnsCrop() {
+    ownsCrop = (crops != nullptr);
 }

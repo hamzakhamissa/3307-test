@@ -67,3 +67,5 @@ void Water::setWatered(bool newWatered)
 {
     watered = newWatered;
 }
+
+Water::~Water() {}

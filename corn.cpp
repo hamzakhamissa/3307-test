@@ -10,6 +10,12 @@ Corn::Corn()
     harvestable = false;
 }
 
+// FIXED: Added missing destructor implementation
+Corn::~Corn()
+{
+    // Nothing special needed
+}
+
 // Getter for state
 int Corn::getState()
 {
@@ -25,7 +31,6 @@ void Corn::setState()
     if (getState() < 4) {
         state += growthSpeed;
     }
-
     if (getState() >= 4) {
         setHarvestable(true);
     }

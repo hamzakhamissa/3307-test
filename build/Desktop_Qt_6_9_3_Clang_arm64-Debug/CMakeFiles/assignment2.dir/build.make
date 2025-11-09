@@ -78,17 +78,34 @@ assignment2_autogen/timestamp: CMakeFiles/assignment2.dir/compiler_depend.ts
 assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/resources.qrc
 assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: CMakeFiles/assignment2_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json
 assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/assets/Plant_1_Phase_3.png
+assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/assets/Chicken_left.png
+assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/assets/Corn.png
+assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/assets/Corn_seed.png
 assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/assets/Seed_1.png
+assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/assets/Tomato.png
+assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/assets/Watering_Can.png
+assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/assets/Chicken_right.png
+assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/assets/Wheat_seed.png
+assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/assets/Corn_Stage_1.png
 assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/assets/hoe.png
+assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/assets/Corn_Stage_2.png
 assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/assets/Right_character.png
 assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/assets/tile.png
+assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/assets/Wheat.png
 assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/assets/dirt.png
 assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/assets/Idle_character.png
 assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/assets/Plant_1_Phase_1.png
+assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/assets/Wheat_Stage_1.png
+assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/assets/Tomato_seed.png
 assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/assets/Up_character.png
+assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/assets/Wheat_Stage_2.png
 assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/assets/Down_character.png
+assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/assets/Cow_left.png
 assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/assets/Plant_1_Phase_2.png
+assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/assets/Cow_right.png
+assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/assets/Tomato_Stage_1.png
 assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/assets/Left_character.png
+assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/assets/Tomato_Stage_2.png
 assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Qt/6.9.3/macos/libexec/rcc
 assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Qt/6.9.3/macos/libexec/rcc
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Automatic RCC for resources.qrc"
@@ -125,24 +142,10 @@ CMakeFiles/assignment2.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment2.dir/main.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/main.cpp" -o CMakeFiles/assignment2.dir/main.cpp.s
 
-CMakeFiles/assignment2.dir/corn.cpp.o: CMakeFiles/assignment2.dir/flags.make
-CMakeFiles/assignment2.dir/corn.cpp.o: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/corn.cpp
-CMakeFiles/assignment2.dir/corn.cpp.o: CMakeFiles/assignment2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/assignment2.dir/corn.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment2.dir/corn.cpp.o -MF CMakeFiles/assignment2.dir/corn.cpp.o.d -o CMakeFiles/assignment2.dir/corn.cpp.o -c "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/corn.cpp"
-
-CMakeFiles/assignment2.dir/corn.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment2.dir/corn.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/corn.cpp" > CMakeFiles/assignment2.dir/corn.cpp.i
-
-CMakeFiles/assignment2.dir/corn.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment2.dir/corn.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/corn.cpp" -o CMakeFiles/assignment2.dir/corn.cpp.s
-
 CMakeFiles/assignment2.dir/icrops.cpp.o: CMakeFiles/assignment2.dir/flags.make
 CMakeFiles/assignment2.dir/icrops.cpp.o: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/icrops.cpp
 CMakeFiles/assignment2.dir/icrops.cpp.o: CMakeFiles/assignment2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/assignment2.dir/icrops.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/assignment2.dir/icrops.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment2.dir/icrops.cpp.o -MF CMakeFiles/assignment2.dir/icrops.cpp.o.d -o CMakeFiles/assignment2.dir/icrops.cpp.o -c "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/icrops.cpp"
 
 CMakeFiles/assignment2.dir/icrops.cpp.i: cmake_force
@@ -152,6 +155,20 @@ CMakeFiles/assignment2.dir/icrops.cpp.i: cmake_force
 CMakeFiles/assignment2.dir/icrops.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment2.dir/icrops.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/icrops.cpp" -o CMakeFiles/assignment2.dir/icrops.cpp.s
+
+CMakeFiles/assignment2.dir/corn.cpp.o: CMakeFiles/assignment2.dir/flags.make
+CMakeFiles/assignment2.dir/corn.cpp.o: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/corn.cpp
+CMakeFiles/assignment2.dir/corn.cpp.o: CMakeFiles/assignment2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/assignment2.dir/corn.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment2.dir/corn.cpp.o -MF CMakeFiles/assignment2.dir/corn.cpp.o.d -o CMakeFiles/assignment2.dir/corn.cpp.o -c "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/corn.cpp"
+
+CMakeFiles/assignment2.dir/corn.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment2.dir/corn.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/corn.cpp" > CMakeFiles/assignment2.dir/corn.cpp.i
+
+CMakeFiles/assignment2.dir/corn.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment2.dir/corn.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/corn.cpp" -o CMakeFiles/assignment2.dir/corn.cpp.s
 
 CMakeFiles/assignment2.dir/itiles.cpp.o: CMakeFiles/assignment2.dir/flags.make
 CMakeFiles/assignment2.dir/itiles.cpp.o: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/itiles.cpp
@@ -335,10 +352,80 @@ CMakeFiles/assignment2.dir/character.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment2.dir/character.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/character.cpp" -o CMakeFiles/assignment2.dir/character.cpp.s
 
+CMakeFiles/assignment2.dir/player.cpp.o: CMakeFiles/assignment2.dir/flags.make
+CMakeFiles/assignment2.dir/player.cpp.o: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/player.cpp
+CMakeFiles/assignment2.dir/player.cpp.o: CMakeFiles/assignment2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/assignment2.dir/player.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment2.dir/player.cpp.o -MF CMakeFiles/assignment2.dir/player.cpp.o.d -o CMakeFiles/assignment2.dir/player.cpp.o -c "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/player.cpp"
+
+CMakeFiles/assignment2.dir/player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment2.dir/player.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/player.cpp" > CMakeFiles/assignment2.dir/player.cpp.i
+
+CMakeFiles/assignment2.dir/player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment2.dir/player.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/player.cpp" -o CMakeFiles/assignment2.dir/player.cpp.s
+
+CMakeFiles/assignment2.dir/inventory.cpp.o: CMakeFiles/assignment2.dir/flags.make
+CMakeFiles/assignment2.dir/inventory.cpp.o: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/inventory.cpp
+CMakeFiles/assignment2.dir/inventory.cpp.o: CMakeFiles/assignment2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/assignment2.dir/inventory.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment2.dir/inventory.cpp.o -MF CMakeFiles/assignment2.dir/inventory.cpp.o.d -o CMakeFiles/assignment2.dir/inventory.cpp.o -c "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/inventory.cpp"
+
+CMakeFiles/assignment2.dir/inventory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment2.dir/inventory.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/inventory.cpp" > CMakeFiles/assignment2.dir/inventory.cpp.i
+
+CMakeFiles/assignment2.dir/inventory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment2.dir/inventory.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/inventory.cpp" -o CMakeFiles/assignment2.dir/inventory.cpp.s
+
+CMakeFiles/assignment2.dir/iinteract.cpp.o: CMakeFiles/assignment2.dir/flags.make
+CMakeFiles/assignment2.dir/iinteract.cpp.o: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/iinteract.cpp
+CMakeFiles/assignment2.dir/iinteract.cpp.o: CMakeFiles/assignment2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/assignment2.dir/iinteract.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment2.dir/iinteract.cpp.o -MF CMakeFiles/assignment2.dir/iinteract.cpp.o.d -o CMakeFiles/assignment2.dir/iinteract.cpp.o -c "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/iinteract.cpp"
+
+CMakeFiles/assignment2.dir/iinteract.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment2.dir/iinteract.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/iinteract.cpp" > CMakeFiles/assignment2.dir/iinteract.cpp.i
+
+CMakeFiles/assignment2.dir/iinteract.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment2.dir/iinteract.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/iinteract.cpp" -o CMakeFiles/assignment2.dir/iinteract.cpp.s
+
+CMakeFiles/assignment2.dir/market.cpp.o: CMakeFiles/assignment2.dir/flags.make
+CMakeFiles/assignment2.dir/market.cpp.o: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/market.cpp
+CMakeFiles/assignment2.dir/market.cpp.o: CMakeFiles/assignment2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/assignment2.dir/market.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment2.dir/market.cpp.o -MF CMakeFiles/assignment2.dir/market.cpp.o.d -o CMakeFiles/assignment2.dir/market.cpp.o -c "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/market.cpp"
+
+CMakeFiles/assignment2.dir/market.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment2.dir/market.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/market.cpp" > CMakeFiles/assignment2.dir/market.cpp.i
+
+CMakeFiles/assignment2.dir/market.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment2.dir/market.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/market.cpp" -o CMakeFiles/assignment2.dir/market.cpp.s
+
+CMakeFiles/assignment2.dir/menu.cpp.o: CMakeFiles/assignment2.dir/flags.make
+CMakeFiles/assignment2.dir/menu.cpp.o: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/menu.cpp
+CMakeFiles/assignment2.dir/menu.cpp.o: CMakeFiles/assignment2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/assignment2.dir/menu.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment2.dir/menu.cpp.o -MF CMakeFiles/assignment2.dir/menu.cpp.o.d -o CMakeFiles/assignment2.dir/menu.cpp.o -c "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/menu.cpp"
+
+CMakeFiles/assignment2.dir/menu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment2.dir/menu.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/menu.cpp" > CMakeFiles/assignment2.dir/menu.cpp.i
+
+CMakeFiles/assignment2.dir/menu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment2.dir/menu.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/menu.cpp" -o CMakeFiles/assignment2.dir/menu.cpp.s
+
 CMakeFiles/assignment2.dir/game.cpp.o: CMakeFiles/assignment2.dir/flags.make
 CMakeFiles/assignment2.dir/game.cpp.o: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/game.cpp
 CMakeFiles/assignment2.dir/game.cpp.o: CMakeFiles/assignment2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/assignment2.dir/game.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/assignment2.dir/game.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment2.dir/game.cpp.o -MF CMakeFiles/assignment2.dir/game.cpp.o.d -o CMakeFiles/assignment2.dir/game.cpp.o -c "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/game.cpp"
 
 CMakeFiles/assignment2.dir/game.cpp.i: cmake_force
@@ -349,10 +436,38 @@ CMakeFiles/assignment2.dir/game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment2.dir/game.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/game.cpp" -o CMakeFiles/assignment2.dir/game.cpp.s
 
+CMakeFiles/assignment2.dir/mainwindow.cpp.o: CMakeFiles/assignment2.dir/flags.make
+CMakeFiles/assignment2.dir/mainwindow.cpp.o: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/mainwindow.cpp
+CMakeFiles/assignment2.dir/mainwindow.cpp.o: CMakeFiles/assignment2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/assignment2.dir/mainwindow.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment2.dir/mainwindow.cpp.o -MF CMakeFiles/assignment2.dir/mainwindow.cpp.o.d -o CMakeFiles/assignment2.dir/mainwindow.cpp.o -c "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/mainwindow.cpp"
+
+CMakeFiles/assignment2.dir/mainwindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment2.dir/mainwindow.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/mainwindow.cpp" > CMakeFiles/assignment2.dir/mainwindow.cpp.i
+
+CMakeFiles/assignment2.dir/mainwindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment2.dir/mainwindow.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/mainwindow.cpp" -o CMakeFiles/assignment2.dir/mainwindow.cpp.s
+
+CMakeFiles/assignment2.dir/tileboard.cpp.o: CMakeFiles/assignment2.dir/flags.make
+CMakeFiles/assignment2.dir/tileboard.cpp.o: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/tileboard.cpp
+CMakeFiles/assignment2.dir/tileboard.cpp.o: CMakeFiles/assignment2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/assignment2.dir/tileboard.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment2.dir/tileboard.cpp.o -MF CMakeFiles/assignment2.dir/tileboard.cpp.o.d -o CMakeFiles/assignment2.dir/tileboard.cpp.o -c "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/tileboard.cpp"
+
+CMakeFiles/assignment2.dir/tileboard.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment2.dir/tileboard.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/tileboard.cpp" > CMakeFiles/assignment2.dir/tileboard.cpp.i
+
+CMakeFiles/assignment2.dir/tileboard.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment2.dir/tileboard.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/tileboard.cpp" -o CMakeFiles/assignment2.dir/tileboard.cpp.s
+
 CMakeFiles/assignment2.dir/assignment2_autogen/EWIEGA46WW/qrc_resources.cpp.o: CMakeFiles/assignment2.dir/flags.make
 CMakeFiles/assignment2.dir/assignment2_autogen/EWIEGA46WW/qrc_resources.cpp.o: assignment2_autogen/EWIEGA46WW/qrc_resources.cpp
 CMakeFiles/assignment2.dir/assignment2_autogen/EWIEGA46WW/qrc_resources.cpp.o: CMakeFiles/assignment2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/assignment2.dir/assignment2_autogen/EWIEGA46WW/qrc_resources.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/assignment2.dir/assignment2_autogen/EWIEGA46WW/qrc_resources.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment2.dir/assignment2_autogen/EWIEGA46WW/qrc_resources.cpp.o -MF CMakeFiles/assignment2.dir/assignment2_autogen/EWIEGA46WW/qrc_resources.cpp.o.d -o CMakeFiles/assignment2.dir/assignment2_autogen/EWIEGA46WW/qrc_resources.cpp.o -c "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/assignment2_autogen/EWIEGA46WW/qrc_resources.cpp"
 
 CMakeFiles/assignment2.dir/assignment2_autogen/EWIEGA46WW/qrc_resources.cpp.i: cmake_force
@@ -367,8 +482,8 @@ CMakeFiles/assignment2.dir/assignment2_autogen/EWIEGA46WW/qrc_resources.cpp.s: c
 assignment2_OBJECTS = \
 "CMakeFiles/assignment2.dir/assignment2_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/assignment2.dir/main.cpp.o" \
-"CMakeFiles/assignment2.dir/corn.cpp.o" \
 "CMakeFiles/assignment2.dir/icrops.cpp.o" \
+"CMakeFiles/assignment2.dir/corn.cpp.o" \
 "CMakeFiles/assignment2.dir/itiles.cpp.o" \
 "CMakeFiles/assignment2.dir/field.cpp.o" \
 "CMakeFiles/assignment2.dir/itool.cpp.o" \
@@ -382,7 +497,14 @@ assignment2_OBJECTS = \
 "CMakeFiles/assignment2.dir/chicken.cpp.o" \
 "CMakeFiles/assignment2.dir/farminghoe.cpp.o" \
 "CMakeFiles/assignment2.dir/character.cpp.o" \
+"CMakeFiles/assignment2.dir/player.cpp.o" \
+"CMakeFiles/assignment2.dir/inventory.cpp.o" \
+"CMakeFiles/assignment2.dir/iinteract.cpp.o" \
+"CMakeFiles/assignment2.dir/market.cpp.o" \
+"CMakeFiles/assignment2.dir/menu.cpp.o" \
 "CMakeFiles/assignment2.dir/game.cpp.o" \
+"CMakeFiles/assignment2.dir/mainwindow.cpp.o" \
+"CMakeFiles/assignment2.dir/tileboard.cpp.o" \
 "CMakeFiles/assignment2.dir/assignment2_autogen/EWIEGA46WW/qrc_resources.cpp.o"
 
 # External object files for target assignment2
@@ -390,8 +512,8 @@ assignment2_EXTERNAL_OBJECTS =
 
 assignment2: CMakeFiles/assignment2.dir/assignment2_autogen/mocs_compilation.cpp.o
 assignment2: CMakeFiles/assignment2.dir/main.cpp.o
-assignment2: CMakeFiles/assignment2.dir/corn.cpp.o
 assignment2: CMakeFiles/assignment2.dir/icrops.cpp.o
+assignment2: CMakeFiles/assignment2.dir/corn.cpp.o
 assignment2: CMakeFiles/assignment2.dir/itiles.cpp.o
 assignment2: CMakeFiles/assignment2.dir/field.cpp.o
 assignment2: CMakeFiles/assignment2.dir/itool.cpp.o
@@ -405,14 +527,21 @@ assignment2: CMakeFiles/assignment2.dir/ianimal.cpp.o
 assignment2: CMakeFiles/assignment2.dir/chicken.cpp.o
 assignment2: CMakeFiles/assignment2.dir/farminghoe.cpp.o
 assignment2: CMakeFiles/assignment2.dir/character.cpp.o
+assignment2: CMakeFiles/assignment2.dir/player.cpp.o
+assignment2: CMakeFiles/assignment2.dir/inventory.cpp.o
+assignment2: CMakeFiles/assignment2.dir/iinteract.cpp.o
+assignment2: CMakeFiles/assignment2.dir/market.cpp.o
+assignment2: CMakeFiles/assignment2.dir/menu.cpp.o
 assignment2: CMakeFiles/assignment2.dir/game.cpp.o
+assignment2: CMakeFiles/assignment2.dir/mainwindow.cpp.o
+assignment2: CMakeFiles/assignment2.dir/tileboard.cpp.o
 assignment2: CMakeFiles/assignment2.dir/assignment2_autogen/EWIEGA46WW/qrc_resources.cpp.o
 assignment2: CMakeFiles/assignment2.dir/build.make
 assignment2: /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtWidgets.framework/Versions/A/QtWidgets
 assignment2: /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtGui.framework/Versions/A/QtGui
 assignment2: /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtCore.framework/Versions/A/QtCore
 assignment2: CMakeFiles/assignment2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX executable assignment2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_29) "Linking CXX executable assignment2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/assignment2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
