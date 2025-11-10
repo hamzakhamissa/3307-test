@@ -1,10 +1,5 @@
 #include "water.h"
 
-/* Constructor for the water class, sets appropriate attributes, acts as an obsatcle,
-
-all attributes should stay the same.
-*/
-
 Water::Water()
 {
     state = 0;

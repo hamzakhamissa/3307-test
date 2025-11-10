@@ -21,11 +21,6 @@ int Corn::getState()
 {
     return state;
 }
-
-/*
-Setter for state, fully grown state set to 4, if below 4 it increments the state, if at 4 or more
-the corn is harvestable
-*/
 void Corn::setState()
 {
     if (getState() < 4) {

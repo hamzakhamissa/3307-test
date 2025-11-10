@@ -4,7 +4,7 @@
 Chicken::Chicken()
 {
     type = "Chicken";
-    foodType = "Corn";
+    foodType = "Corn"; // Change to chicken feed??
     state = 0;
     harvestable = false;
 }

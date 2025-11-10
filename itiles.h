@@ -8,7 +8,7 @@
 class ITiles {
 public:
     ITiles();
-    virtual ~ITiles(); // FIXED: Added 'virtual' keyword - CRITICAL for polymorphic deletion
+    virtual ~ITiles();
 
     virtual int getState() = 0;
     virtual void setState(int newstate) = 0;
