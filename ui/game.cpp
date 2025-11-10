@@ -1,4 +1,4 @@
-#include "game.h"
+#include "ui/game.h"
 #include "itemtypeenum.h"
 #include "inventory.h"
 #include <iostream>
