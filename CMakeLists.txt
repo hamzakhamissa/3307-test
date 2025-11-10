@@ -14,31 +14,35 @@ set(CMAKE_AUTORCC ON)
 
 add_executable(assignment2
     main.cpp
-    icrops.h icrops.cpp
-    corn.h corn.cpp
-    itiles.h itiles.cpp
-    field.h field.cpp
-    itool.h itool.cpp
-    water.h water.cpp
-    wateringcan.h wateringcan.cpp
-    yard.h yard.cpp
-    wheat.h wheat.cpp
-    tomato.h tomato.cpp
-    cow.h cow.cpp
-    ianimal.h ianimal.cpp
-    chicken.h chicken.cpp
-    farminghoe.h farminghoe.cpp
-    character.h character.cpp
-    player.h player.cpp
-    itemtypeenum.h
-    inventory.h inventory.cpp
-    iinteract.h iinteract.cpp
-    market.h market.cpp
-    menu.h menu.cpp
-    game.h game.cpp
     resources.qrc
-    mainwindow.h mainwindow.cpp
-    tileboard.h tileboard.cpp
+    core/icrops.h core/icrops.cpp
+    core/corn.h core/corn.cpp
+    core/itiles.h core/itiles.cpp
+    core/field.h core/field.cpp
+    core/itool.h core/itool.cpp
+    core/water.h core/water.cpp
+    core/wateringcan.h core/wateringcan.cpp
+    core/yard.h core/yard.cpp
+    core/wheat.h core/wheat.cpp
+    core/tomato.h core/tomato.cpp
+    core/cow.h core/cow.cpp
+    core/ianimal.h core/ianimal.cpp
+    core/chicken.h core/chicken.cpp
+    core/farminghoe.h core/farminghoe.cpp
+    core/character.h core/character.cpp
+    core/player.h core/player.cpp
+    core/itemtypeenum.h
+    core/inventory.h core/inventory.cpp
+    core/iinteract.h core/iinteract.cpp
+    core/market.h core/market.cpp
+    core/menu.h core/menu.cpp
+    core/tileboard.h core/tileboard.cpp
+    ui/game.h ui/game.cpp
+)
+
+target_include_directories(assignment2 PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/core
+    ${CMAKE_CURRENT_SOURCE_DIR}/ui
 )
 
 # Link Qt libraries
