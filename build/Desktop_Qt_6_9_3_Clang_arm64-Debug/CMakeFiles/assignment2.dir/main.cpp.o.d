@@ -968,7 +968,7 @@ CMakeFiles/assignment2.dir/main.cpp.o: \
   /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtCore.framework/Headers/qhash.h \
   /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtCore.framework/Headers/qvarlengtharray.h \
   /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtGui.framework/Headers/qguiapplication_platform.h \
-  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/game.h \
+  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/ui/game.h \
   /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtCore.framework/Headers/QElapsedTimer \
   /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtGui.framework/Headers/QKeyEvent \
   /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtGui.framework/Headers/qevent.h \
@@ -1009,18 +1009,18 @@ CMakeFiles/assignment2.dir/main.cpp.o: \
   /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtGui.framework/Headers/qicon.h \
   /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtGui.framework/Headers/qpalette.h \
   /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtWidgets.framework/Headers/qsizepolicy.h \
-  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/player.h \
-  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/character.h \
+  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/player.h \
+  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/character.h \
   /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtCore.framework/Headers/Qt \
-  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/itemtypeenum.h \
-  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/tileboard.h \
-  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/itiles.h \
-  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/icrops.h \
-  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/field.h \
-  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/yard.h \
-  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/water.h \
-  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/market.h \
-  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/menu.h \
+  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/itemtypeenum.h \
+  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/tileboard.h \
+  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/itiles.h \
+  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/icrops.h \
+  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/field.h \
+  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/yard.h \
+  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/water.h \
+  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/market.h \
+  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/menu.h \
   /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtCore.framework/Headers/QString \
   /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtCore.framework/Headers/QJsonObject \
   /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtCore.framework/Headers/qjsonobject.h \

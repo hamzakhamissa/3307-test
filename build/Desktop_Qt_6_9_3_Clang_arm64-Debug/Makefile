@@ -203,317 +203,509 @@ assignment2_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/assignment2_autogen/mocs_compilation.cpp.s
 .PHONY : assignment2_autogen/mocs_compilation.cpp.s
 
-character.o: character.cpp.o
-.PHONY : character.o
+core/character.o: core/character.cpp.o
+.PHONY : core/character.o
 
 # target to build an object file
-character.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/character.cpp.o
-.PHONY : character.cpp.o
+core/character.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/character.cpp.o
+.PHONY : core/character.cpp.o
 
-character.i: character.cpp.i
-.PHONY : character.i
+core/character.i: core/character.cpp.i
+.PHONY : core/character.i
 
 # target to preprocess a source file
-character.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/character.cpp.i
-.PHONY : character.cpp.i
+core/character.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/character.cpp.i
+.PHONY : core/character.cpp.i
 
-character.s: character.cpp.s
-.PHONY : character.s
+core/character.s: core/character.cpp.s
+.PHONY : core/character.s
 
 # target to generate assembly for a file
-character.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/character.cpp.s
-.PHONY : character.cpp.s
+core/character.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/character.cpp.s
+.PHONY : core/character.cpp.s
 
-chicken.o: chicken.cpp.o
-.PHONY : chicken.o
+core/chicken.o: core/chicken.cpp.o
+.PHONY : core/chicken.o
 
 # target to build an object file
-chicken.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/chicken.cpp.o
-.PHONY : chicken.cpp.o
+core/chicken.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/chicken.cpp.o
+.PHONY : core/chicken.cpp.o
 
-chicken.i: chicken.cpp.i
-.PHONY : chicken.i
+core/chicken.i: core/chicken.cpp.i
+.PHONY : core/chicken.i
 
 # target to preprocess a source file
-chicken.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/chicken.cpp.i
-.PHONY : chicken.cpp.i
+core/chicken.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/chicken.cpp.i
+.PHONY : core/chicken.cpp.i
 
-chicken.s: chicken.cpp.s
-.PHONY : chicken.s
+core/chicken.s: core/chicken.cpp.s
+.PHONY : core/chicken.s
 
 # target to generate assembly for a file
-chicken.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/chicken.cpp.s
-.PHONY : chicken.cpp.s
+core/chicken.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/chicken.cpp.s
+.PHONY : core/chicken.cpp.s
 
-corn.o: corn.cpp.o
-.PHONY : corn.o
+core/corn.o: core/corn.cpp.o
+.PHONY : core/corn.o
 
 # target to build an object file
-corn.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/corn.cpp.o
-.PHONY : corn.cpp.o
+core/corn.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/corn.cpp.o
+.PHONY : core/corn.cpp.o
 
-corn.i: corn.cpp.i
-.PHONY : corn.i
+core/corn.i: core/corn.cpp.i
+.PHONY : core/corn.i
 
 # target to preprocess a source file
-corn.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/corn.cpp.i
-.PHONY : corn.cpp.i
+core/corn.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/corn.cpp.i
+.PHONY : core/corn.cpp.i
 
-corn.s: corn.cpp.s
-.PHONY : corn.s
+core/corn.s: core/corn.cpp.s
+.PHONY : core/corn.s
 
 # target to generate assembly for a file
-corn.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/corn.cpp.s
-.PHONY : corn.cpp.s
+core/corn.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/corn.cpp.s
+.PHONY : core/corn.cpp.s
 
-cow.o: cow.cpp.o
-.PHONY : cow.o
+core/cow.o: core/cow.cpp.o
+.PHONY : core/cow.o
 
 # target to build an object file
-cow.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/cow.cpp.o
-.PHONY : cow.cpp.o
+core/cow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/cow.cpp.o
+.PHONY : core/cow.cpp.o
 
-cow.i: cow.cpp.i
-.PHONY : cow.i
+core/cow.i: core/cow.cpp.i
+.PHONY : core/cow.i
 
 # target to preprocess a source file
-cow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/cow.cpp.i
-.PHONY : cow.cpp.i
+core/cow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/cow.cpp.i
+.PHONY : core/cow.cpp.i
 
-cow.s: cow.cpp.s
-.PHONY : cow.s
+core/cow.s: core/cow.cpp.s
+.PHONY : core/cow.s
 
 # target to generate assembly for a file
-cow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/cow.cpp.s
-.PHONY : cow.cpp.s
+core/cow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/cow.cpp.s
+.PHONY : core/cow.cpp.s
 
-farminghoe.o: farminghoe.cpp.o
-.PHONY : farminghoe.o
+core/farminghoe.o: core/farminghoe.cpp.o
+.PHONY : core/farminghoe.o
 
 # target to build an object file
-farminghoe.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/farminghoe.cpp.o
-.PHONY : farminghoe.cpp.o
+core/farminghoe.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/farminghoe.cpp.o
+.PHONY : core/farminghoe.cpp.o
 
-farminghoe.i: farminghoe.cpp.i
-.PHONY : farminghoe.i
+core/farminghoe.i: core/farminghoe.cpp.i
+.PHONY : core/farminghoe.i
 
 # target to preprocess a source file
-farminghoe.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/farminghoe.cpp.i
-.PHONY : farminghoe.cpp.i
+core/farminghoe.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/farminghoe.cpp.i
+.PHONY : core/farminghoe.cpp.i
 
-farminghoe.s: farminghoe.cpp.s
-.PHONY : farminghoe.s
+core/farminghoe.s: core/farminghoe.cpp.s
+.PHONY : core/farminghoe.s
 
 # target to generate assembly for a file
-farminghoe.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/farminghoe.cpp.s
-.PHONY : farminghoe.cpp.s
+core/farminghoe.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/farminghoe.cpp.s
+.PHONY : core/farminghoe.cpp.s
 
-field.o: field.cpp.o
-.PHONY : field.o
+core/field.o: core/field.cpp.o
+.PHONY : core/field.o
 
 # target to build an object file
-field.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/field.cpp.o
-.PHONY : field.cpp.o
+core/field.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/field.cpp.o
+.PHONY : core/field.cpp.o
 
-field.i: field.cpp.i
-.PHONY : field.i
+core/field.i: core/field.cpp.i
+.PHONY : core/field.i
 
 # target to preprocess a source file
-field.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/field.cpp.i
-.PHONY : field.cpp.i
+core/field.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/field.cpp.i
+.PHONY : core/field.cpp.i
 
-field.s: field.cpp.s
-.PHONY : field.s
+core/field.s: core/field.cpp.s
+.PHONY : core/field.s
 
 # target to generate assembly for a file
-field.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/field.cpp.s
-.PHONY : field.cpp.s
+core/field.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/field.cpp.s
+.PHONY : core/field.cpp.s
 
-game.o: game.cpp.o
-.PHONY : game.o
+core/ianimal.o: core/ianimal.cpp.o
+.PHONY : core/ianimal.o
 
 # target to build an object file
-game.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/game.cpp.o
-.PHONY : game.cpp.o
+core/ianimal.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/ianimal.cpp.o
+.PHONY : core/ianimal.cpp.o
 
-game.i: game.cpp.i
-.PHONY : game.i
+core/ianimal.i: core/ianimal.cpp.i
+.PHONY : core/ianimal.i
 
 # target to preprocess a source file
-game.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/game.cpp.i
-.PHONY : game.cpp.i
+core/ianimal.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/ianimal.cpp.i
+.PHONY : core/ianimal.cpp.i
 
-game.s: game.cpp.s
-.PHONY : game.s
+core/ianimal.s: core/ianimal.cpp.s
+.PHONY : core/ianimal.s
 
 # target to generate assembly for a file
-game.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/game.cpp.s
-.PHONY : game.cpp.s
+core/ianimal.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/ianimal.cpp.s
+.PHONY : core/ianimal.cpp.s
 
-ianimal.o: ianimal.cpp.o
-.PHONY : ianimal.o
+core/icrops.o: core/icrops.cpp.o
+.PHONY : core/icrops.o
 
 # target to build an object file
-ianimal.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/ianimal.cpp.o
-.PHONY : ianimal.cpp.o
+core/icrops.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/icrops.cpp.o
+.PHONY : core/icrops.cpp.o
 
-ianimal.i: ianimal.cpp.i
-.PHONY : ianimal.i
+core/icrops.i: core/icrops.cpp.i
+.PHONY : core/icrops.i
 
 # target to preprocess a source file
-ianimal.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/ianimal.cpp.i
-.PHONY : ianimal.cpp.i
+core/icrops.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/icrops.cpp.i
+.PHONY : core/icrops.cpp.i
 
-ianimal.s: ianimal.cpp.s
-.PHONY : ianimal.s
+core/icrops.s: core/icrops.cpp.s
+.PHONY : core/icrops.s
 
 # target to generate assembly for a file
-ianimal.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/ianimal.cpp.s
-.PHONY : ianimal.cpp.s
+core/icrops.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/icrops.cpp.s
+.PHONY : core/icrops.cpp.s
 
-icrops.o: icrops.cpp.o
-.PHONY : icrops.o
+core/iinteract.o: core/iinteract.cpp.o
+.PHONY : core/iinteract.o
 
 # target to build an object file
-icrops.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/icrops.cpp.o
-.PHONY : icrops.cpp.o
+core/iinteract.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/iinteract.cpp.o
+.PHONY : core/iinteract.cpp.o
 
-icrops.i: icrops.cpp.i
-.PHONY : icrops.i
+core/iinteract.i: core/iinteract.cpp.i
+.PHONY : core/iinteract.i
 
 # target to preprocess a source file
-icrops.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/icrops.cpp.i
-.PHONY : icrops.cpp.i
+core/iinteract.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/iinteract.cpp.i
+.PHONY : core/iinteract.cpp.i
 
-icrops.s: icrops.cpp.s
-.PHONY : icrops.s
+core/iinteract.s: core/iinteract.cpp.s
+.PHONY : core/iinteract.s
 
 # target to generate assembly for a file
-icrops.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/icrops.cpp.s
-.PHONY : icrops.cpp.s
+core/iinteract.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/iinteract.cpp.s
+.PHONY : core/iinteract.cpp.s
 
-iinteract.o: iinteract.cpp.o
-.PHONY : iinteract.o
+core/inventory.o: core/inventory.cpp.o
+.PHONY : core/inventory.o
 
 # target to build an object file
-iinteract.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/iinteract.cpp.o
-.PHONY : iinteract.cpp.o
+core/inventory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/inventory.cpp.o
+.PHONY : core/inventory.cpp.o
 
-iinteract.i: iinteract.cpp.i
-.PHONY : iinteract.i
+core/inventory.i: core/inventory.cpp.i
+.PHONY : core/inventory.i
 
 # target to preprocess a source file
-iinteract.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/iinteract.cpp.i
-.PHONY : iinteract.cpp.i
+core/inventory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/inventory.cpp.i
+.PHONY : core/inventory.cpp.i
 
-iinteract.s: iinteract.cpp.s
-.PHONY : iinteract.s
+core/inventory.s: core/inventory.cpp.s
+.PHONY : core/inventory.s
 
 # target to generate assembly for a file
-iinteract.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/iinteract.cpp.s
-.PHONY : iinteract.cpp.s
+core/inventory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/inventory.cpp.s
+.PHONY : core/inventory.cpp.s
 
-inventory.o: inventory.cpp.o
-.PHONY : inventory.o
+core/itiles.o: core/itiles.cpp.o
+.PHONY : core/itiles.o
 
 # target to build an object file
-inventory.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/inventory.cpp.o
-.PHONY : inventory.cpp.o
+core/itiles.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/itiles.cpp.o
+.PHONY : core/itiles.cpp.o
 
-inventory.i: inventory.cpp.i
-.PHONY : inventory.i
+core/itiles.i: core/itiles.cpp.i
+.PHONY : core/itiles.i
 
 # target to preprocess a source file
-inventory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/inventory.cpp.i
-.PHONY : inventory.cpp.i
+core/itiles.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/itiles.cpp.i
+.PHONY : core/itiles.cpp.i
 
-inventory.s: inventory.cpp.s
-.PHONY : inventory.s
+core/itiles.s: core/itiles.cpp.s
+.PHONY : core/itiles.s
 
 # target to generate assembly for a file
-inventory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/inventory.cpp.s
-.PHONY : inventory.cpp.s
+core/itiles.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/itiles.cpp.s
+.PHONY : core/itiles.cpp.s
 
-itiles.o: itiles.cpp.o
-.PHONY : itiles.o
+core/itool.o: core/itool.cpp.o
+.PHONY : core/itool.o
 
 # target to build an object file
-itiles.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/itiles.cpp.o
-.PHONY : itiles.cpp.o
+core/itool.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/itool.cpp.o
+.PHONY : core/itool.cpp.o
 
-itiles.i: itiles.cpp.i
-.PHONY : itiles.i
+core/itool.i: core/itool.cpp.i
+.PHONY : core/itool.i
 
 # target to preprocess a source file
-itiles.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/itiles.cpp.i
-.PHONY : itiles.cpp.i
+core/itool.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/itool.cpp.i
+.PHONY : core/itool.cpp.i
 
-itiles.s: itiles.cpp.s
-.PHONY : itiles.s
+core/itool.s: core/itool.cpp.s
+.PHONY : core/itool.s
 
 # target to generate assembly for a file
-itiles.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/itiles.cpp.s
-.PHONY : itiles.cpp.s
+core/itool.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/itool.cpp.s
+.PHONY : core/itool.cpp.s
 
-itool.o: itool.cpp.o
-.PHONY : itool.o
+core/market.o: core/market.cpp.o
+.PHONY : core/market.o
 
 # target to build an object file
-itool.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/itool.cpp.o
-.PHONY : itool.cpp.o
+core/market.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/market.cpp.o
+.PHONY : core/market.cpp.o
 
-itool.i: itool.cpp.i
-.PHONY : itool.i
+core/market.i: core/market.cpp.i
+.PHONY : core/market.i
 
 # target to preprocess a source file
-itool.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/itool.cpp.i
-.PHONY : itool.cpp.i
+core/market.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/market.cpp.i
+.PHONY : core/market.cpp.i
 
-itool.s: itool.cpp.s
-.PHONY : itool.s
+core/market.s: core/market.cpp.s
+.PHONY : core/market.s
 
 # target to generate assembly for a file
-itool.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/itool.cpp.s
-.PHONY : itool.cpp.s
+core/market.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/market.cpp.s
+.PHONY : core/market.cpp.s
+
+core/menu.o: core/menu.cpp.o
+.PHONY : core/menu.o
+
+# target to build an object file
+core/menu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/menu.cpp.o
+.PHONY : core/menu.cpp.o
+
+core/menu.i: core/menu.cpp.i
+.PHONY : core/menu.i
+
+# target to preprocess a source file
+core/menu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/menu.cpp.i
+.PHONY : core/menu.cpp.i
+
+core/menu.s: core/menu.cpp.s
+.PHONY : core/menu.s
+
+# target to generate assembly for a file
+core/menu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/menu.cpp.s
+.PHONY : core/menu.cpp.s
+
+core/player.o: core/player.cpp.o
+.PHONY : core/player.o
+
+# target to build an object file
+core/player.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/player.cpp.o
+.PHONY : core/player.cpp.o
+
+core/player.i: core/player.cpp.i
+.PHONY : core/player.i
+
+# target to preprocess a source file
+core/player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/player.cpp.i
+.PHONY : core/player.cpp.i
+
+core/player.s: core/player.cpp.s
+.PHONY : core/player.s
+
+# target to generate assembly for a file
+core/player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/player.cpp.s
+.PHONY : core/player.cpp.s
+
+core/tileboard.o: core/tileboard.cpp.o
+.PHONY : core/tileboard.o
+
+# target to build an object file
+core/tileboard.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/tileboard.cpp.o
+.PHONY : core/tileboard.cpp.o
+
+core/tileboard.i: core/tileboard.cpp.i
+.PHONY : core/tileboard.i
+
+# target to preprocess a source file
+core/tileboard.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/tileboard.cpp.i
+.PHONY : core/tileboard.cpp.i
+
+core/tileboard.s: core/tileboard.cpp.s
+.PHONY : core/tileboard.s
+
+# target to generate assembly for a file
+core/tileboard.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/tileboard.cpp.s
+.PHONY : core/tileboard.cpp.s
+
+core/tomato.o: core/tomato.cpp.o
+.PHONY : core/tomato.o
+
+# target to build an object file
+core/tomato.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/tomato.cpp.o
+.PHONY : core/tomato.cpp.o
+
+core/tomato.i: core/tomato.cpp.i
+.PHONY : core/tomato.i
+
+# target to preprocess a source file
+core/tomato.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/tomato.cpp.i
+.PHONY : core/tomato.cpp.i
+
+core/tomato.s: core/tomato.cpp.s
+.PHONY : core/tomato.s
+
+# target to generate assembly for a file
+core/tomato.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/tomato.cpp.s
+.PHONY : core/tomato.cpp.s
+
+core/water.o: core/water.cpp.o
+.PHONY : core/water.o
+
+# target to build an object file
+core/water.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/water.cpp.o
+.PHONY : core/water.cpp.o
+
+core/water.i: core/water.cpp.i
+.PHONY : core/water.i
+
+# target to preprocess a source file
+core/water.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/water.cpp.i
+.PHONY : core/water.cpp.i
+
+core/water.s: core/water.cpp.s
+.PHONY : core/water.s
+
+# target to generate assembly for a file
+core/water.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/water.cpp.s
+.PHONY : core/water.cpp.s
+
+core/wateringcan.o: core/wateringcan.cpp.o
+.PHONY : core/wateringcan.o
+
+# target to build an object file
+core/wateringcan.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/wateringcan.cpp.o
+.PHONY : core/wateringcan.cpp.o
+
+core/wateringcan.i: core/wateringcan.cpp.i
+.PHONY : core/wateringcan.i
+
+# target to preprocess a source file
+core/wateringcan.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/wateringcan.cpp.i
+.PHONY : core/wateringcan.cpp.i
+
+core/wateringcan.s: core/wateringcan.cpp.s
+.PHONY : core/wateringcan.s
+
+# target to generate assembly for a file
+core/wateringcan.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/wateringcan.cpp.s
+.PHONY : core/wateringcan.cpp.s
+
+core/wheat.o: core/wheat.cpp.o
+.PHONY : core/wheat.o
+
+# target to build an object file
+core/wheat.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/wheat.cpp.o
+.PHONY : core/wheat.cpp.o
+
+core/wheat.i: core/wheat.cpp.i
+.PHONY : core/wheat.i
+
+# target to preprocess a source file
+core/wheat.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/wheat.cpp.i
+.PHONY : core/wheat.cpp.i
+
+core/wheat.s: core/wheat.cpp.s
+.PHONY : core/wheat.s
+
+# target to generate assembly for a file
+core/wheat.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/wheat.cpp.s
+.PHONY : core/wheat.cpp.s
+
+core/yard.o: core/yard.cpp.o
+.PHONY : core/yard.o
+
+# target to build an object file
+core/yard.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/yard.cpp.o
+.PHONY : core/yard.cpp.o
+
+core/yard.i: core/yard.cpp.i
+.PHONY : core/yard.i
+
+# target to preprocess a source file
+core/yard.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/yard.cpp.i
+.PHONY : core/yard.cpp.i
+
+core/yard.s: core/yard.cpp.s
+.PHONY : core/yard.s
+
+# target to generate assembly for a file
+core/yard.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/yard.cpp.s
+.PHONY : core/yard.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -539,245 +731,29 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-mainwindow.o: mainwindow.cpp.o
-.PHONY : mainwindow.o
+ui/game.o: ui/game.cpp.o
+.PHONY : ui/game.o
 
 # target to build an object file
-mainwindow.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/mainwindow.cpp.o
-.PHONY : mainwindow.cpp.o
+ui/game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/ui/game.cpp.o
+.PHONY : ui/game.cpp.o
 
-mainwindow.i: mainwindow.cpp.i
-.PHONY : mainwindow.i
-
-# target to preprocess a source file
-mainwindow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/mainwindow.cpp.i
-.PHONY : mainwindow.cpp.i
-
-mainwindow.s: mainwindow.cpp.s
-.PHONY : mainwindow.s
-
-# target to generate assembly for a file
-mainwindow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/mainwindow.cpp.s
-.PHONY : mainwindow.cpp.s
-
-market.o: market.cpp.o
-.PHONY : market.o
-
-# target to build an object file
-market.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/market.cpp.o
-.PHONY : market.cpp.o
-
-market.i: market.cpp.i
-.PHONY : market.i
+ui/game.i: ui/game.cpp.i
+.PHONY : ui/game.i
 
 # target to preprocess a source file
-market.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/market.cpp.i
-.PHONY : market.cpp.i
+ui/game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/ui/game.cpp.i
+.PHONY : ui/game.cpp.i
 
-market.s: market.cpp.s
-.PHONY : market.s
-
-# target to generate assembly for a file
-market.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/market.cpp.s
-.PHONY : market.cpp.s
-
-menu.o: menu.cpp.o
-.PHONY : menu.o
-
-# target to build an object file
-menu.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/menu.cpp.o
-.PHONY : menu.cpp.o
-
-menu.i: menu.cpp.i
-.PHONY : menu.i
-
-# target to preprocess a source file
-menu.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/menu.cpp.i
-.PHONY : menu.cpp.i
-
-menu.s: menu.cpp.s
-.PHONY : menu.s
+ui/game.s: ui/game.cpp.s
+.PHONY : ui/game.s
 
 # target to generate assembly for a file
-menu.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/menu.cpp.s
-.PHONY : menu.cpp.s
-
-player.o: player.cpp.o
-.PHONY : player.o
-
-# target to build an object file
-player.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/player.cpp.o
-.PHONY : player.cpp.o
-
-player.i: player.cpp.i
-.PHONY : player.i
-
-# target to preprocess a source file
-player.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/player.cpp.i
-.PHONY : player.cpp.i
-
-player.s: player.cpp.s
-.PHONY : player.s
-
-# target to generate assembly for a file
-player.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/player.cpp.s
-.PHONY : player.cpp.s
-
-tileboard.o: tileboard.cpp.o
-.PHONY : tileboard.o
-
-# target to build an object file
-tileboard.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/tileboard.cpp.o
-.PHONY : tileboard.cpp.o
-
-tileboard.i: tileboard.cpp.i
-.PHONY : tileboard.i
-
-# target to preprocess a source file
-tileboard.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/tileboard.cpp.i
-.PHONY : tileboard.cpp.i
-
-tileboard.s: tileboard.cpp.s
-.PHONY : tileboard.s
-
-# target to generate assembly for a file
-tileboard.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/tileboard.cpp.s
-.PHONY : tileboard.cpp.s
-
-tomato.o: tomato.cpp.o
-.PHONY : tomato.o
-
-# target to build an object file
-tomato.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/tomato.cpp.o
-.PHONY : tomato.cpp.o
-
-tomato.i: tomato.cpp.i
-.PHONY : tomato.i
-
-# target to preprocess a source file
-tomato.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/tomato.cpp.i
-.PHONY : tomato.cpp.i
-
-tomato.s: tomato.cpp.s
-.PHONY : tomato.s
-
-# target to generate assembly for a file
-tomato.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/tomato.cpp.s
-.PHONY : tomato.cpp.s
-
-water.o: water.cpp.o
-.PHONY : water.o
-
-# target to build an object file
-water.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/water.cpp.o
-.PHONY : water.cpp.o
-
-water.i: water.cpp.i
-.PHONY : water.i
-
-# target to preprocess a source file
-water.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/water.cpp.i
-.PHONY : water.cpp.i
-
-water.s: water.cpp.s
-.PHONY : water.s
-
-# target to generate assembly for a file
-water.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/water.cpp.s
-.PHONY : water.cpp.s
-
-wateringcan.o: wateringcan.cpp.o
-.PHONY : wateringcan.o
-
-# target to build an object file
-wateringcan.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/wateringcan.cpp.o
-.PHONY : wateringcan.cpp.o
-
-wateringcan.i: wateringcan.cpp.i
-.PHONY : wateringcan.i
-
-# target to preprocess a source file
-wateringcan.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/wateringcan.cpp.i
-.PHONY : wateringcan.cpp.i
-
-wateringcan.s: wateringcan.cpp.s
-.PHONY : wateringcan.s
-
-# target to generate assembly for a file
-wateringcan.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/wateringcan.cpp.s
-.PHONY : wateringcan.cpp.s
-
-wheat.o: wheat.cpp.o
-.PHONY : wheat.o
-
-# target to build an object file
-wheat.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/wheat.cpp.o
-.PHONY : wheat.cpp.o
-
-wheat.i: wheat.cpp.i
-.PHONY : wheat.i
-
-# target to preprocess a source file
-wheat.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/wheat.cpp.i
-.PHONY : wheat.cpp.i
-
-wheat.s: wheat.cpp.s
-.PHONY : wheat.s
-
-# target to generate assembly for a file
-wheat.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/wheat.cpp.s
-.PHONY : wheat.cpp.s
-
-yard.o: yard.cpp.o
-.PHONY : yard.o
-
-# target to build an object file
-yard.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/yard.cpp.o
-.PHONY : yard.cpp.o
-
-yard.i: yard.cpp.i
-.PHONY : yard.i
-
-# target to preprocess a source file
-yard.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/yard.cpp.i
-.PHONY : yard.cpp.i
-
-yard.s: yard.cpp.s
-.PHONY : yard.s
-
-# target to generate assembly for a file
-yard.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/yard.cpp.s
-.PHONY : yard.cpp.s
+ui/game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/ui/game.cpp.s
+.PHONY : ui/game.cpp.s
 
 # Help Target
 help:
@@ -796,78 +772,75 @@ help:
 	@echo "... assignment2_autogen/mocs_compilation.o"
 	@echo "... assignment2_autogen/mocs_compilation.i"
 	@echo "... assignment2_autogen/mocs_compilation.s"
-	@echo "... character.o"
-	@echo "... character.i"
-	@echo "... character.s"
-	@echo "... chicken.o"
-	@echo "... chicken.i"
-	@echo "... chicken.s"
-	@echo "... corn.o"
-	@echo "... corn.i"
-	@echo "... corn.s"
-	@echo "... cow.o"
-	@echo "... cow.i"
-	@echo "... cow.s"
-	@echo "... farminghoe.o"
-	@echo "... farminghoe.i"
-	@echo "... farminghoe.s"
-	@echo "... field.o"
-	@echo "... field.i"
-	@echo "... field.s"
-	@echo "... game.o"
-	@echo "... game.i"
-	@echo "... game.s"
-	@echo "... ianimal.o"
-	@echo "... ianimal.i"
-	@echo "... ianimal.s"
-	@echo "... icrops.o"
-	@echo "... icrops.i"
-	@echo "... icrops.s"
-	@echo "... iinteract.o"
-	@echo "... iinteract.i"
-	@echo "... iinteract.s"
-	@echo "... inventory.o"
-	@echo "... inventory.i"
-	@echo "... inventory.s"
-	@echo "... itiles.o"
-	@echo "... itiles.i"
-	@echo "... itiles.s"
-	@echo "... itool.o"
-	@echo "... itool.i"
-	@echo "... itool.s"
+	@echo "... core/character.o"
+	@echo "... core/character.i"
+	@echo "... core/character.s"
+	@echo "... core/chicken.o"
+	@echo "... core/chicken.i"
+	@echo "... core/chicken.s"
+	@echo "... core/corn.o"
+	@echo "... core/corn.i"
+	@echo "... core/corn.s"
+	@echo "... core/cow.o"
+	@echo "... core/cow.i"
+	@echo "... core/cow.s"
+	@echo "... core/farminghoe.o"
+	@echo "... core/farminghoe.i"
+	@echo "... core/farminghoe.s"
+	@echo "... core/field.o"
+	@echo "... core/field.i"
+	@echo "... core/field.s"
+	@echo "... core/ianimal.o"
+	@echo "... core/ianimal.i"
+	@echo "... core/ianimal.s"
+	@echo "... core/icrops.o"
+	@echo "... core/icrops.i"
+	@echo "... core/icrops.s"
+	@echo "... core/iinteract.o"
+	@echo "... core/iinteract.i"
+	@echo "... core/iinteract.s"
+	@echo "... core/inventory.o"
+	@echo "... core/inventory.i"
+	@echo "... core/inventory.s"
+	@echo "... core/itiles.o"
+	@echo "... core/itiles.i"
+	@echo "... core/itiles.s"
+	@echo "... core/itool.o"
+	@echo "... core/itool.i"
+	@echo "... core/itool.s"
+	@echo "... core/market.o"
+	@echo "... core/market.i"
+	@echo "... core/market.s"
+	@echo "... core/menu.o"
+	@echo "... core/menu.i"
+	@echo "... core/menu.s"
+	@echo "... core/player.o"
+	@echo "... core/player.i"
+	@echo "... core/player.s"
+	@echo "... core/tileboard.o"
+	@echo "... core/tileboard.i"
+	@echo "... core/tileboard.s"
+	@echo "... core/tomato.o"
+	@echo "... core/tomato.i"
+	@echo "... core/tomato.s"
+	@echo "... core/water.o"
+	@echo "... core/water.i"
+	@echo "... core/water.s"
+	@echo "... core/wateringcan.o"
+	@echo "... core/wateringcan.i"
+	@echo "... core/wateringcan.s"
+	@echo "... core/wheat.o"
+	@echo "... core/wheat.i"
+	@echo "... core/wheat.s"
+	@echo "... core/yard.o"
+	@echo "... core/yard.i"
+	@echo "... core/yard.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... mainwindow.o"
-	@echo "... mainwindow.i"
-	@echo "... mainwindow.s"
-	@echo "... market.o"
-	@echo "... market.i"
-	@echo "... market.s"
-	@echo "... menu.o"
-	@echo "... menu.i"
-	@echo "... menu.s"
-	@echo "... player.o"
-	@echo "... player.i"
-	@echo "... player.s"
-	@echo "... tileboard.o"
-	@echo "... tileboard.i"
-	@echo "... tileboard.s"
-	@echo "... tomato.o"
-	@echo "... tomato.i"
-	@echo "... tomato.s"
-	@echo "... water.o"
-	@echo "... water.i"
-	@echo "... water.s"
-	@echo "... wateringcan.o"
-	@echo "... wateringcan.i"
-	@echo "... wateringcan.s"
-	@echo "... wheat.o"
-	@echo "... wheat.i"
-	@echo "... wheat.s"
-	@echo "... yard.o"
-	@echo "... yard.i"
-	@echo "... yard.s"
+	@echo "... ui/game.o"
+	@echo "... ui/game.i"
+	@echo "... ui/game.s"
 .PHONY : help
 
 

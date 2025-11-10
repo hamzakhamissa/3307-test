@@ -1,7 +1,7 @@
 CMakeFiles/assignment2.dir/assignment2_autogen/mocs_compilation.cpp.o: \
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/assignment2_autogen/mocs_compilation.cpp \
-  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/assignment2_autogen/EWIEGA46WW/moc_game.cpp \
-  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/assignment2_autogen/EWIEGA46WW/../../../../game.h \
+  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/assignment2_autogen/UYX5XTB5RZ/moc_game.cpp \
+  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/assignment2_autogen/UYX5XTB5RZ/../../../../ui/game.h \
   /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtCore.framework/Headers/QElapsedTimer \
   /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtCore.framework/Headers/qelapsedtimer.h \
   /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtCore.framework/Headers/qcompare.h \
@@ -1008,18 +1008,18 @@ CMakeFiles/assignment2.dir/assignment2_autogen/mocs_compilation.cpp.o: \
   /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtWidgets.framework/Headers/qsizepolicy.h \
   /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtGui.framework/Headers/qcursor.h \
   /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtGui.framework/Headers/qbitmap.h \
-  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/assignment2_autogen/EWIEGA46WW/../../../../player.h \
-  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/assignment2_autogen/EWIEGA46WW/../../../../character.h \
+  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/player.h \
+  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/character.h \
   /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtCore.framework/Headers/Qt \
-  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/assignment2_autogen/EWIEGA46WW/../../../../itemtypeenum.h \
-  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/assignment2_autogen/EWIEGA46WW/../../../../tileboard.h \
-  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/assignment2_autogen/EWIEGA46WW/../../../../itiles.h \
-  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/assignment2_autogen/EWIEGA46WW/../../../../icrops.h \
-  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/assignment2_autogen/EWIEGA46WW/../../../../field.h \
-  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/assignment2_autogen/EWIEGA46WW/../../../../yard.h \
-  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/assignment2_autogen/EWIEGA46WW/../../../../water.h \
-  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/assignment2_autogen/EWIEGA46WW/../../../../market.h \
-  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/assignment2_autogen/EWIEGA46WW/../../../../menu.h \
+  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/itemtypeenum.h \
+  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/tileboard.h \
+  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/itiles.h \
+  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/icrops.h \
+  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/field.h \
+  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/yard.h \
+  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/water.h \
+  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/market.h \
+  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/menu.h \
   /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtCore.framework/Headers/QString \
   /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtCore.framework/Headers/QJsonObject \
   /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtCore.framework/Headers/qjsonobject.h \

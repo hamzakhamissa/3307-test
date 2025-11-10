@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/clang++
 CXX_DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
 
-CXX_INCLUDES = -I"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/assignment2_autogen/include" -isystem /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtCore.framework/Headers -iframework /Users/hamzakhamissa/Qt/6.9.3/macos/lib -isystem /Users/hamzakhamissa/Qt/6.9.3/macos/mkspecs/macx-clang -isystem /Users/hamzakhamissa/Qt/6.9.3/macos/include -isystem /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtWidgets.framework/Headers -isystem /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtGui.framework/Headers
+CXX_INCLUDES = -I"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/assignment2_autogen/include" -I"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core" -I"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/ui" -isystem /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtCore.framework/Headers -iframework /Users/hamzakhamissa/Qt/6.9.3/macos/lib -isystem /Users/hamzakhamissa/Qt/6.9.3/macos/mkspecs/macx-clang -isystem /Users/hamzakhamissa/Qt/6.9.3/macos/include -isystem /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtWidgets.framework/Headers -isystem /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtGui.framework/Headers
 
 CXX_FLAGSarm64 = -DQT_QML_DEBUG -g -std=gnu++17 -arch arm64 -fcolor-diagnostics
 

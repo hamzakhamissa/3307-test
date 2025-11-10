@@ -446,147 +446,141 @@
 	"HEADERS" : 
 	[
 		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/character.h",
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/character.h",
 			"Mu",
-			"EWIEGA46WW/moc_character.cpp",
+			"TAC5DWH4SE/moc_character.cpp",
 			null
 		],
 		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/chicken.h",
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/chicken.h",
 			"Mu",
-			"EWIEGA46WW/moc_chicken.cpp",
+			"TAC5DWH4SE/moc_chicken.cpp",
 			null
 		],
 		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/corn.h",
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/corn.h",
 			"Mu",
-			"EWIEGA46WW/moc_corn.cpp",
+			"TAC5DWH4SE/moc_corn.cpp",
 			null
 		],
 		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/cow.h",
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/cow.h",
 			"Mu",
-			"EWIEGA46WW/moc_cow.cpp",
+			"TAC5DWH4SE/moc_cow.cpp",
 			null
 		],
 		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/farminghoe.h",
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/farminghoe.h",
 			"Mu",
-			"EWIEGA46WW/moc_farminghoe.cpp",
+			"TAC5DWH4SE/moc_farminghoe.cpp",
 			null
 		],
 		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/field.h",
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/field.h",
 			"Mu",
-			"EWIEGA46WW/moc_field.cpp",
+			"TAC5DWH4SE/moc_field.cpp",
 			null
 		],
 		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/game.h",
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/ianimal.h",
 			"Mu",
-			"EWIEGA46WW/moc_game.cpp",
+			"TAC5DWH4SE/moc_ianimal.cpp",
 			null
 		],
 		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/ianimal.h",
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/icrops.h",
 			"Mu",
-			"EWIEGA46WW/moc_ianimal.cpp",
+			"TAC5DWH4SE/moc_icrops.cpp",
 			null
 		],
 		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/icrops.h",
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/iinteract.h",
 			"Mu",
-			"EWIEGA46WW/moc_icrops.cpp",
+			"TAC5DWH4SE/moc_iinteract.cpp",
 			null
 		],
 		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/iinteract.h",
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/inventory.h",
 			"Mu",
-			"EWIEGA46WW/moc_iinteract.cpp",
+			"TAC5DWH4SE/moc_inventory.cpp",
 			null
 		],
 		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/inventory.h",
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/itemtypeenum.h",
 			"Mu",
-			"EWIEGA46WW/moc_inventory.cpp",
+			"TAC5DWH4SE/moc_itemtypeenum.cpp",
 			null
 		],
 		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/itemtypeenum.h",
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/itiles.h",
 			"Mu",
-			"EWIEGA46WW/moc_itemtypeenum.cpp",
+			"TAC5DWH4SE/moc_itiles.cpp",
 			null
 		],
 		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/itiles.h",
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/itool.h",
 			"Mu",
-			"EWIEGA46WW/moc_itiles.cpp",
+			"TAC5DWH4SE/moc_itool.cpp",
 			null
 		],
 		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/itool.h",
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/market.h",
 			"Mu",
-			"EWIEGA46WW/moc_itool.cpp",
+			"TAC5DWH4SE/moc_market.cpp",
 			null
 		],
 		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/mainwindow.h",
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/menu.h",
 			"Mu",
-			"EWIEGA46WW/moc_mainwindow.cpp",
+			"TAC5DWH4SE/moc_menu.cpp",
 			null
 		],
 		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/market.h",
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/player.h",
 			"Mu",
-			"EWIEGA46WW/moc_market.cpp",
+			"TAC5DWH4SE/moc_player.cpp",
 			null
 		],
 		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/menu.h",
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/tileboard.h",
 			"Mu",
-			"EWIEGA46WW/moc_menu.cpp",
+			"TAC5DWH4SE/moc_tileboard.cpp",
 			null
 		],
 		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/player.h",
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/tomato.h",
 			"Mu",
-			"EWIEGA46WW/moc_player.cpp",
+			"TAC5DWH4SE/moc_tomato.cpp",
 			null
 		],
 		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/tileboard.h",
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/water.h",
 			"Mu",
-			"EWIEGA46WW/moc_tileboard.cpp",
+			"TAC5DWH4SE/moc_water.cpp",
 			null
 		],
 		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/tomato.h",
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/wateringcan.h",
 			"Mu",
-			"EWIEGA46WW/moc_tomato.cpp",
+			"TAC5DWH4SE/moc_wateringcan.cpp",
 			null
 		],
 		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/water.h",
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/wheat.h",
 			"Mu",
-			"EWIEGA46WW/moc_water.cpp",
+			"TAC5DWH4SE/moc_wheat.cpp",
 			null
 		],
 		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/wateringcan.h",
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/yard.h",
 			"Mu",
-			"EWIEGA46WW/moc_wateringcan.cpp",
+			"TAC5DWH4SE/moc_yard.cpp",
 			null
 		],
 		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/wheat.h",
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/ui/game.h",
 			"Mu",
-			"EWIEGA46WW/moc_wheat.cpp",
-			null
-		],
-		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/yard.h",
-			"Mu",
-			"EWIEGA46WW/moc_yard.cpp",
+			"UYX5XTB5RZ/moc_game.cpp",
 			null
 		]
 	],
@@ -603,6 +597,8 @@
 	],
 	"MOC_INCLUDES" : 
 	[
+		"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core",
+		"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/ui",
 		"/Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtCore.framework/Headers",
 		"/Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtCore.framework",
 		"/Users/hamzakhamissa/Qt/6.9.3/macos/mkspecs/macx-clang",
@@ -651,67 +647,107 @@
 	"SOURCES" : 
 	[
 		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/character.cpp",
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/character.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/chicken.cpp",
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/chicken.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/corn.cpp",
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/corn.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/cow.cpp",
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/cow.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/farminghoe.cpp",
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/farminghoe.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/field.cpp",
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/field.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/game.cpp",
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/ianimal.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/ianimal.cpp",
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/icrops.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/icrops.cpp",
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/iinteract.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/iinteract.cpp",
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/inventory.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/inventory.cpp",
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/itiles.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/itiles.cpp",
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/itool.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/itool.cpp",
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/market.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/menu.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/player.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/tileboard.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/tomato.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/water.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/wateringcan.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/wheat.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/yard.cpp",
 			"Mu",
 			null
 		],
@@ -721,52 +757,7 @@
 			null
 		],
 		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/mainwindow.cpp",
-			"Mu",
-			null
-		],
-		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/market.cpp",
-			"Mu",
-			null
-		],
-		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/menu.cpp",
-			"Mu",
-			null
-		],
-		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/player.cpp",
-			"Mu",
-			null
-		],
-		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/tileboard.cpp",
-			"Mu",
-			null
-		],
-		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/tomato.cpp",
-			"Mu",
-			null
-		],
-		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/water.cpp",
-			"Mu",
-			null
-		],
-		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/wateringcan.cpp",
-			"Mu",
-			null
-		],
-		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/wheat.cpp",
-			"Mu",
-			null
-		],
-		[
-			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/yard.cpp",
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/ui/game.cpp",
 			"Mu",
 			null
 		]
