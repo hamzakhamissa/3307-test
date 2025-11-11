@@ -11,4 +11,11 @@
 
 ## Submission Notes
 Push all files before the deadline. This repo is private and only visible to you and instructors.
+
+## Buttons for game
+- Movement WASD
+- Interaction LEFT MOUSE CLICK or E
+- Main menu ESC
+- Market M (Toggle between buy and sell mode TAB)
+- Go forward a day T
 # Synced update - Added ProjectTemplatee
