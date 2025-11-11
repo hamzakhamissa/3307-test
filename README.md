@@ -18,4 +18,7 @@ Push all files before the deadline. This repo is private and only visible to you
 - Main menu ESC
 - Market M (Toggle between buy and sell mode TAB)
 - Go forward a day T
+
+## Youtube Video:
+https://www.youtube.com/watch?v=3qlIO9maDNU
 # Synced update - Added ProjectTemplatee
