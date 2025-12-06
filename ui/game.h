@@ -107,4 +107,4 @@ private:
     void renderTileIndicator(QPainter& painter);
 };
 
-#endif // GAME_H
+#endif

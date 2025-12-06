@@ -3,7 +3,6 @@
 
 #include "itiles.h"
 
-// Plantable tile - State: 0=grass, 1=tilled, 2=planted
 class Field : public ITiles {
 public:
     Field();
@@ -22,7 +21,10 @@ public:
     bool getWatered() override;
     void setWatered(bool newWatered) override;
 
-    // Additional helper methods for stronger Field class
+    void setAnimal(IAnimal *animal) override; 
+    IAnimal *getAnimal() override;           
+    bool hasAnimal() override;               
+
     bool canTill() const;      // Can this field be tilled?
     bool canPlant() const;      // Can a crop be planted here?
     bool canWater() const;      // Can this field be watered?
@@ -32,4 +34,4 @@ private:
     void updateOwnsCrop();      // Internal helper to sync ownsCrop flag
 };
 
-#endif // FIELD_H
+#endif 

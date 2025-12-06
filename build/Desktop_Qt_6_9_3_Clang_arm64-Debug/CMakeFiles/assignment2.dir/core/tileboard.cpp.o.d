@@ -943,6 +943,7 @@ CMakeFiles/assignment2.dir/core/tileboard.cpp.o: \
   /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtGui.framework/Headers/QPixmap \
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/itiles.h \
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/icrops.h \
+  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/ianimal.h \
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/field.h \
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/yard.h \
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/water.h \
@@ -951,7 +952,6 @@ CMakeFiles/assignment2.dir/core/tileboard.cpp.o: \
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/player.h \
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/itemtypeenum.h \
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/iinteract.h \
-  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/ianimal.h \
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/wheat.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/istream \

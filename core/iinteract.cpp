@@ -5,64 +5,44 @@
 #include "player.h"
 #include "itemtypeenum.h"
 #include "field.h"
-#include "wheat.h"
-#include "tomato.h"
-#include "corn.h"
-#include "cow.h"
-#include "chicken.h"
+#include "cropfactory.h"
+#include "animalfactory.h"
 #include <iostream>
 
-// In your iinteract.cpp implementation:
+// ==================== TILLING ====================
 ITiles* TillingInteraction::createReplacementTile(ITiles* oldTile) {
     if (!oldTile) return nullptr;
 
-    // If we're tilling a Yard, replace it with a Field
     if (oldTile->getType() == "Yard" && oldTile->getState() == 0) {
         Field* newField = new Field();
-        newField->setState(1); // Set to tilled state
+        newField->setState(1);
         return newField;
     }
 
-    // If it's already a Field, just till it
     if (oldTile->getType() == "Field" && oldTile->getState() == 0) {
         oldTile->setState(1);
-        return nullptr; // No replacement needed
+        return nullptr;
     }
 
     return nullptr;
 }
 
 bool TillingInteraction::doAction(ITiles* tile, ICrops* crop, IAnimal* animal, Player* player) {
-    if (!tile) {
-        std::cout << "TillingInteraction: tile is null!" << std::endl;
-        return false;
-    }
+    if (!tile) return false;
 
     std::string tileType = tile->getType();
-    std::cout << "TillingInteraction: Tile type = " << tileType << std::endl;
-    std::cout << "TillingInteraction: Tile state before = " << tile->getState() << std::endl;
-
-    if (tileType != "Field" && tileType != "Yard") {
-        std::cout << "TillingInteraction: Wrong tile type!" << std::endl;
-        return false;
-    }
+    if (tileType != "Field" && tileType != "Yard") return false;
 
     if (tile->getState() == 0) {
-        std::cout << "TillingInteraction: Setting state to 1..." << std::endl;
-        tile->setState(1); // Till the ground
-        std::cout << "TillingInteraction: Tile state after = " << tile->getState() << std::endl;
+        tile->setState(1);
         return true;
     }
 
-    std::cout << "TillingInteraction: State is not 0!" << std::endl;
     return false;
 }
 
-
 bool TillingInteraction::checkState(ITiles* tile, ICrops* crop, IAnimal* animal) {
     if (!tile) return false;
-    
-    // Allow tilling on both Field and Yard tiles when they're in grass state (state 0)
     std::string tileType = tile->getType();
     return (tileType == "Field" || tileType == "Yard") && tile->getState() == 0;
 }
@@ -72,34 +52,19 @@ bool TillingInteraction::isEquipped(Player* player) {
     return player->getSelectedItem() == ItemTypeEnum::HOE;
 }
 
-// Planting Interaction
+// ==================== PLANTING ====================
 bool PlantingInteraction::doAction(ITiles* tile, ICrops* crop, IAnimal* animal, Player* player) {
     if (!tile || !player) return false;
     if (tile->getType() != "Field" || tile->getState() != 1 || tile->hasCrop()) return false;
 
     ItemTypeEnum selectedItem = player->getSelectedItem();
-    ICrops* newCrop = nullptr;
+    ICrops* newCrop = CropFactory::createCropFromSeed(selectedItem);
 
-    // Create crop based on seed type
-    if (selectedItem == ItemTypeEnum::WHEAT_SEED) {
-        newCrop = new Wheat();
-        if (!player->removeItemFromInventory(ItemTypeEnum::WHEAT_SEED, 1)) {
-            delete newCrop;
-            return false;
-        }
-    } else if (selectedItem == ItemTypeEnum::TOMATO_SEED) {
-        newCrop = new Tomato();
-        if (!player->removeItemFromInventory(ItemTypeEnum::TOMATO_SEED, 1)) {
-            delete newCrop;
-            return false;
-        }
-    } else if (selectedItem == ItemTypeEnum::CORN_SEED) {
-        newCrop = new Corn();
-        if (!player->removeItemFromInventory(ItemTypeEnum::CORN_SEED, 1)) {
-            delete newCrop;
-            return false;
-        }
-    } else {
+    if (!newCrop) return false;
+
+    // Try to remove seed from inventory
+    if (!player->removeItemFromInventory(selectedItem, 1)) {
+        delete newCrop;
         return false;
     }
 
@@ -115,16 +80,16 @@ bool PlantingInteraction::checkState(ITiles* tile, ICrops* crop, IAnimal* animal
 bool PlantingInteraction::isEquipped(Player* player) {
     if (!player) return false;
     ItemTypeEnum item = player->getSelectedItem();
-    return item == ItemTypeEnum::WHEAT_SEED || 
-           item == ItemTypeEnum::TOMATO_SEED || 
+    return item == ItemTypeEnum::WHEAT_SEED ||
+           item == ItemTypeEnum::TOMATO_SEED ||
            item == ItemTypeEnum::CORN_SEED;
 }
 
-// Watering Interaction
+// ==================== WATERING ====================
 bool WateringInteraction::doAction(ITiles* tile, ICrops* crop, IAnimal* animal, Player* player) {
     if (!tile || !player) return false;
     if (tile->getType() != "Field") return false;
-    
+
     tile->setWatered(true);
     return true;
 }
@@ -139,7 +104,7 @@ bool WateringInteraction::isEquipped(Player* player) {
     return player->getSelectedItem() == ItemTypeEnum::WATERING_CAN;
 }
 
-// Harvest Crop Interaction
+// ==================== HARVEST CROP ====================
 bool HarvestCropInteraction::doAction(ITiles* tile, ICrops* crop, IAnimal* animal, Player* player) {
     if (!tile || !crop || !player) return false;
     if (!crop->getHarvestable()) return false;
@@ -156,10 +121,7 @@ bool HarvestCropInteraction::doAction(ITiles* tile, ICrops* crop, IAnimal* anima
 
     if (harvestItem != ItemTypeEnum::NONE) {
         if (player->addItemToInventory(harvestItem, 1)) {
-            // CRITICAL FIX: Let tile handle crop deletion
-            // tile->setCrop(nullptr) will delete the crop internally
             tile->setCrop(nullptr);
-            // DO NOT delete crop here - tile owns it and will clean it up!
             return true;
         }
     }
@@ -171,26 +133,21 @@ bool HarvestCropInteraction::checkState(ITiles* tile, ICrops* crop, IAnimal* ani
 }
 
 bool HarvestCropInteraction::isEquipped(Player* player) {
-    // Can harvest with empty hands or any tool
-    return true;
+    return true; // Can harvest with empty hands
 }
 
-// Harvest Animal Interaction
+// ==================== HARVEST ANIMAL ====================
 bool HarvestAnimalInteraction::doAction(ITiles* tile, ICrops* crop, IAnimal* animal, Player* player) {
     if (!animal || !player) return false;
     if (!animal->getHarvestable()) return false;
 
     // Determine what item to add based on animal type
-    ItemTypeEnum harvestItem = ItemTypeEnum::NONE;
-    if (animal->getType() == "Cow") {
-        harvestItem = ItemTypeEnum::MILK;
-    } else if (animal->getType() == "Chicken") {
-        harvestItem = ItemTypeEnum::EGG;
-    }
+    ItemTypeEnum harvestItem = AnimalFactory::getProduceType(animal->getType());
 
     if (harvestItem != ItemTypeEnum::NONE) {
         if (player->addItemToInventory(harvestItem, 1)) {
-            animal->setHarvestable(); // Reset harvestable state
+            animal->setState(0); // Reset to unfed state
+            animal->setHarvestable(); // Update harvestable state
             return true;
         }
     }
@@ -202,33 +159,82 @@ bool HarvestAnimalInteraction::checkState(ITiles* tile, ICrops* crop, IAnimal* a
 }
 
 bool HarvestAnimalInteraction::isEquipped(Player* player) {
-    // Can harvest with empty hands
-    return true;
+    return true; // Can harvest with empty hands
 }
 
-// Feed Animal Interaction
+// ==================== FEED ANIMAL ====================
 bool FeedAnimalInteraction::doAction(ITiles* tile, ICrops* crop, IAnimal* animal, Player* player) {
     if (!animal || !player) return false;
 
-    // Check if player has feed
-    if (player->getItemCount(ItemTypeEnum::FEED) > 0) {
-        // Check if animal likes this food type
-        // For now, all animals accept feed
+    // Check if player has the correct food for this animal
+    std::string foodType = animal->getFoodType();
+    ItemTypeEnum requiredFood = ItemTypeEnum::NONE;
+
+    if (foodType == "Wheat") {
+        requiredFood = ItemTypeEnum::WHEAT;
+    } else if (foodType == "Corn") {
+        requiredFood = ItemTypeEnum::CORN;
+    }
+
+    // If player doesn't have the specific food, check for generic FEED
+    if (requiredFood != ItemTypeEnum::NONE && player->getItemCount(requiredFood) > 0) {
+        if (player->removeItemFromInventory(requiredFood, 1)) {
+            animal->setState(1); // Fed state
+            animal->setHarvestable(); // Make harvestable
+            return true;
+        }
+    } else if (player->getItemCount(ItemTypeEnum::FEED) > 0) {
         if (player->removeItemFromInventory(ItemTypeEnum::FEED, 1)) {
             animal->setState(1); // Fed state
             animal->setHarvestable(); // Make harvestable
             return true;
         }
     }
+
     return false;
 }
 
 bool FeedAnimalInteraction::checkState(ITiles* tile, ICrops* crop, IAnimal* animal) {
-    return animal != nullptr;
+    return animal != nullptr && animal->getState() == 0; // Can only feed unfed animals
 }
 
 bool FeedAnimalInteraction::isEquipped(Player* player) {
     if (!player) return false;
-    return player->getItemCount(ItemTypeEnum::FEED) > 0;
+    return player->getItemCount(ItemTypeEnum::WHEAT) > 0 ||
+           player->getItemCount(ItemTypeEnum::CORN) > 0 ||
+           player->getItemCount(ItemTypeEnum::FEED) > 0;
 }
 
+// ==================== PLACE ANIMAL (NEW) ====================
+bool PlaceAnimalInteraction::doAction(ITiles* tile, ICrops* crop, IAnimal* animal, Player* player) {
+    if (!tile || !player) return false;
+
+    // Can only place animals on Yard tiles that don't have animals
+    if (tile->getType() != "Yard" || tile->hasAnimal()) return false;
+
+    ItemTypeEnum selectedItem = player->getSelectedItem();
+    IAnimal* newAnimal = AnimalFactory::createAnimalFromItem(selectedItem);
+
+    if (!newAnimal) return false;
+
+    // Try to remove animal from inventory
+    if (!player->removeItemFromInventory(selectedItem, 1)) {
+        delete newAnimal;
+        return false;
+    }
+
+    tile->setAnimal(newAnimal);
+    std::cout << "Placed " << newAnimal->getType() << " on Yard tile" << std::endl;
+    return true;
+}
+
+bool PlaceAnimalInteraction::checkState(ITiles* tile, ICrops* crop, IAnimal* animal) {
+    if (!tile) return false;
+    return tile->getType() == "Yard" && !tile->hasAnimal();
+}
+
+bool PlaceAnimalInteraction::isEquipped(Player* player) {
+    if (!player) return false;
+    ItemTypeEnum item = player->getSelectedItem();
+    return item == ItemTypeEnum::COW || item == ItemTypeEnum::CHICKEN;
+}

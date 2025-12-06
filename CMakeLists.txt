@@ -38,6 +38,10 @@ add_executable(assignment2
     core/menu.h core/menu.cpp
     core/tileboard.h core/tileboard.cpp
     ui/game.h ui/game.cpp
+    core/cropfactory.h core/cropfactory.cpp
+    core/animalfactory.h core/animalfactory.cpp
+    core/savemanager.h core/savemanager.cpp
+    core/animalfactory.h core/animalfactory.cpp
 )
 
 target_include_directories(assignment2 PRIVATE

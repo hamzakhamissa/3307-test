@@ -6,6 +6,16 @@ Yard::Yard() {
     crops = nullptr;
     ownsCrop = false;
     watered = false;
+    animal = nullptr;
+    ownsAnimal = false;
+}
+
+Yard::~Yard() {
+    // Clean up animal if we own it
+    if (animal && ownsAnimal) {
+        delete animal;
+        animal = nullptr;
+    }
 }
 
 int Yard::getState() { return state; }
@@ -14,7 +24,6 @@ void Yard::setState(int newState) { state = newState; }
 std::string Yard::getType() { return type; }
 void Yard::setType(std::string newType) { type = std::move(newType); }
 
-// Not plantable: ignore crop assignment and always report no crop
 void Yard::setCrop(ICrops * /*crop*/) {
     crops = nullptr;
     ownsCrop = false;
@@ -25,4 +34,23 @@ bool Yard::hasCrop() { return false; }
 bool Yard::getWatered() { return watered; }
 void Yard::setWatered(bool newWatered) { watered = newWatered; }
 
-Yard::~Yard() {}
+void Yard::setAnimal(IAnimal *newAnimal) {
+    if (animal && animal != newAnimal && ownsAnimal) {
+        delete animal;
+    }
+    animal = newAnimal;
+    updateOwnsAnimal();
+}
+
+IAnimal *Yard::getAnimal() {
+    return animal;
+}
+
+bool Yard::hasAnimal() {
+    updateOwnsAnimal();
+    return ownsAnimal;
+}
+
+void Yard::updateOwnsAnimal() {
+    ownsAnimal = (animal != nullptr);
+}

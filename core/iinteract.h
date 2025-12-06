@@ -68,5 +68,12 @@ public:
     bool isEquipped(Player* player) override;
 };
 
-#endif // IINTERACT_H
+// Place Animal interaction (NEW)
+class PlaceAnimalInteraction : public IInteract {
+public:
+    bool doAction(ITiles* tile, ICrops* crop, IAnimal* animal, Player* player) override;
+    bool checkState(ITiles* tile, ICrops* crop, IAnimal* animal) override;
+    bool isEquipped(Player* player) override;
+};
 
+#endif 

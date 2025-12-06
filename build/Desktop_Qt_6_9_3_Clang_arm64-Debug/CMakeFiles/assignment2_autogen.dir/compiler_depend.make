@@ -767,6 +767,8 @@ assignment2_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Platfo
   CMakeFiles/4.1.2/CMakeCXXCompiler.cmake \
   CMakeFiles/4.1.2/CMakeSystem.cmake \
   assignment2_autogen/moc_predefs.h \
+  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/animalfactory.cpp \
+  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/animalfactory.h \
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/character.cpp \
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/character.h \
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/chicken.cpp \
@@ -775,6 +777,8 @@ assignment2_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Platfo
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/corn.h \
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/cow.cpp \
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/cow.h \
+  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/cropfactory.cpp \
+  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/cropfactory.h \
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/farminghoe.cpp \
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/farminghoe.h \
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/field.cpp \
@@ -798,6 +802,8 @@ assignment2_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Platfo
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/menu.h \
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/player.cpp \
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/player.h \
+  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/savemanager.cpp \
+  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/savemanager.h \
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/tileboard.cpp \
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/tileboard.h \
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/tomato.cpp \
@@ -1702,8 +1708,6 @@ assignment2_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Platfo
 
 /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtCore.framework/Versions/A/Headers/qstringconverter_base.h:
 
-/Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtCore.framework/Versions/A/Headers/qstringconverter.h:
-
 /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtCore.framework/Versions/A/Headers/qstring.h:
 
 /Users/hamzakhamissa/Qt/6.9.3/macos/lib/cmake/Qt6Gui/Qt6QWbmpPluginTargets-relwithdebinfo.cmake:
@@ -1914,13 +1918,13 @@ assignment2_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Platfo
 
 /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/tomato.h:
 
+/Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/savemanager.h:
+
+/Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/savemanager.cpp:
+
 /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtCore.framework/Versions/A/Headers/qvariant.h:
 
 /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/player.cpp:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/adjacent_difference.h:
-
-/Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/menu.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit/rotate.h:
 
@@ -1968,6 +1972,8 @@ assignment2_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Platfo
 
 /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/character.cpp:
 
+/Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/animalfactory.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/inout_ptr.h:
 
 assignment2_autogen/moc_predefs.h:
@@ -2008,7 +2014,15 @@ CMakeFiles/4.1.2/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_short.h:
 
+/Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/cropfactory.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int8_t.h:
+
+/Users/hamzakhamissa/Qt/6.9.3/macos/lib/cmake/Qt6Core/Qt6QDarwinBluetoothPermissionPluginAdditionalTargetInfo.cmake:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_fundamental.h:
+
+/Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/animalfactory.cpp:
 
 /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtCore.framework/Versions/A/Headers/q20type_traits.h:
 
@@ -2494,10 +2508,6 @@ CMakeFiles/4.1.2/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cmath:
 
-/Users/hamzakhamissa/Qt/6.9.3/macos/lib/cmake/Qt6Core/Qt6QDarwinBluetoothPermissionPluginAdditionalTargetInfo.cmake:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_fundamental.h:
-
 /Users/hamzakhamissa/Qt/6.9.3/macos/lib/cmake/Qt6Gui/Qt6QTgaPluginConfig.cmake:
 
 /Users/hamzakhamissa/Qt/6.9.3/macos/lib/cmake/Qt6DBusTools/Qt6DBusToolsVersionlessTargets.cmake:
@@ -2601,6 +2611,10 @@ CMakeFiles/4.1.2/CMakeCXXCompiler.cmake:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_rvalue_reference.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_pointer.h:
+
+/Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtCore.framework/Versions/A/Headers/qstringconverter.h:
+
+/Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/cropfactory.cpp:
 
 /Users/hamzakhamissa/Qt/6.9.3/macos/lib/cmake/Qt6/QtPublicTestHelpers.cmake:
 
@@ -2959,6 +2973,10 @@ CMakeFiles/4.1.2/CMakeCCompiler.cmake:
 /Users/hamzakhamissa/Qt/6.9.3/macos/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargets-relwithdebinfo.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__undef_macros:
+
+/Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/menu.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/adjacent_difference.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_volatile.h:
 

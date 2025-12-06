@@ -643,4 +643,5 @@ CMakeFiles/assignment2.dir/core/itiles.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/pstl.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/sample.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/bit \
-  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/icrops.h
+  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/icrops.h \
+  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/ianimal.h

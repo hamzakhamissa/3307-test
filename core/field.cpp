@@ -6,21 +6,23 @@ Field::Field() {
     crops = nullptr;
     ownsCrop = false;
     watered = false;
+    animal = nullptr;
+    ownsAnimal = false;
 }
 
 Field::~Field() {
-    // Clean up crop if we own it
     if (crops) {
         delete crops;
         crops = nullptr;
     }
+    // Fields don't own animals, but set to nullptr for safety
+    animal = nullptr;
 }
 
 int Field::getState() { return state; }
 
 void Field::setState(int newState) {
     state = newState;
-    // If state is reset to 0 (grass), remove crop if present
     if (state == 0 && crops) {
         delete crops;
         crops = nullptr;
@@ -32,7 +34,6 @@ std::string Field::getType() { return type; }
 void Field::setType(std::string newType) { type = std::move(newType); }
 
 void Field::setCrop(ICrops *crop) {
-    // Clean up old crop if present
     if (crops && crops != crop) {
         delete crops;
     }
@@ -54,6 +55,19 @@ bool Field::getWatered() { return watered; }
 
 void Field::setWatered(bool newWatered) {
     watered = newWatered;
+}
+
+void Field::setAnimal(IAnimal * /*animal*/) {
+    animal = nullptr;
+    ownsAnimal = false;
+}
+
+IAnimal *Field::getAnimal() {
+    return nullptr;
+}
+
+bool Field::hasAnimal() {
+    return false;
 }
 
 bool Field::canTill() const {

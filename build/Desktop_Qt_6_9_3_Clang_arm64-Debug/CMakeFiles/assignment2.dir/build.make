@@ -98,8 +98,10 @@ assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Downloads
 assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/assets/Wheat_Stage_1.png
 assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/assets/Tomato_seed.png
 assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/assets/Up_character.png
+assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/assets/Milk.png
 assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/assets/Wheat_Stage_2.png
 assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/assets/Down_character.png
+assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/assets/Brown_Egg.png
 assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/assets/Cow_left.png
 assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/assets/Plant_1_Phase_2.png
 assignment2_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/assets/Cow_right.png
@@ -450,10 +452,52 @@ CMakeFiles/assignment2.dir/ui/game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment2.dir/ui/game.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/ui/game.cpp" -o CMakeFiles/assignment2.dir/ui/game.cpp.s
 
+CMakeFiles/assignment2.dir/core/cropfactory.cpp.o: CMakeFiles/assignment2.dir/flags.make
+CMakeFiles/assignment2.dir/core/cropfactory.cpp.o: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/cropfactory.cpp
+CMakeFiles/assignment2.dir/core/cropfactory.cpp.o: CMakeFiles/assignment2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/assignment2.dir/core/cropfactory.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment2.dir/core/cropfactory.cpp.o -MF CMakeFiles/assignment2.dir/core/cropfactory.cpp.o.d -o CMakeFiles/assignment2.dir/core/cropfactory.cpp.o -c "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/cropfactory.cpp"
+
+CMakeFiles/assignment2.dir/core/cropfactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment2.dir/core/cropfactory.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/cropfactory.cpp" > CMakeFiles/assignment2.dir/core/cropfactory.cpp.i
+
+CMakeFiles/assignment2.dir/core/cropfactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment2.dir/core/cropfactory.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/cropfactory.cpp" -o CMakeFiles/assignment2.dir/core/cropfactory.cpp.s
+
+CMakeFiles/assignment2.dir/core/animalfactory.cpp.o: CMakeFiles/assignment2.dir/flags.make
+CMakeFiles/assignment2.dir/core/animalfactory.cpp.o: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/animalfactory.cpp
+CMakeFiles/assignment2.dir/core/animalfactory.cpp.o: CMakeFiles/assignment2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/assignment2.dir/core/animalfactory.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment2.dir/core/animalfactory.cpp.o -MF CMakeFiles/assignment2.dir/core/animalfactory.cpp.o.d -o CMakeFiles/assignment2.dir/core/animalfactory.cpp.o -c "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/animalfactory.cpp"
+
+CMakeFiles/assignment2.dir/core/animalfactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment2.dir/core/animalfactory.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/animalfactory.cpp" > CMakeFiles/assignment2.dir/core/animalfactory.cpp.i
+
+CMakeFiles/assignment2.dir/core/animalfactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment2.dir/core/animalfactory.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/animalfactory.cpp" -o CMakeFiles/assignment2.dir/core/animalfactory.cpp.s
+
+CMakeFiles/assignment2.dir/core/savemanager.cpp.o: CMakeFiles/assignment2.dir/flags.make
+CMakeFiles/assignment2.dir/core/savemanager.cpp.o: /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/savemanager.cpp
+CMakeFiles/assignment2.dir/core/savemanager.cpp.o: CMakeFiles/assignment2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/assignment2.dir/core/savemanager.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment2.dir/core/savemanager.cpp.o -MF CMakeFiles/assignment2.dir/core/savemanager.cpp.o.d -o CMakeFiles/assignment2.dir/core/savemanager.cpp.o -c "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/savemanager.cpp"
+
+CMakeFiles/assignment2.dir/core/savemanager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment2.dir/core/savemanager.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/savemanager.cpp" > CMakeFiles/assignment2.dir/core/savemanager.cpp.i
+
+CMakeFiles/assignment2.dir/core/savemanager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment2.dir/core/savemanager.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/savemanager.cpp" -o CMakeFiles/assignment2.dir/core/savemanager.cpp.s
+
 CMakeFiles/assignment2.dir/assignment2_autogen/EWIEGA46WW/qrc_resources.cpp.o: CMakeFiles/assignment2.dir/flags.make
 CMakeFiles/assignment2.dir/assignment2_autogen/EWIEGA46WW/qrc_resources.cpp.o: assignment2_autogen/EWIEGA46WW/qrc_resources.cpp
 CMakeFiles/assignment2.dir/assignment2_autogen/EWIEGA46WW/qrc_resources.cpp.o: CMakeFiles/assignment2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/assignment2.dir/assignment2_autogen/EWIEGA46WW/qrc_resources.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/assignment2.dir/assignment2_autogen/EWIEGA46WW/qrc_resources.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment2.dir/assignment2_autogen/EWIEGA46WW/qrc_resources.cpp.o -MF CMakeFiles/assignment2.dir/assignment2_autogen/EWIEGA46WW/qrc_resources.cpp.o.d -o CMakeFiles/assignment2.dir/assignment2_autogen/EWIEGA46WW/qrc_resources.cpp.o -c "/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/assignment2_autogen/EWIEGA46WW/qrc_resources.cpp"
 
 CMakeFiles/assignment2.dir/assignment2_autogen/EWIEGA46WW/qrc_resources.cpp.i: cmake_force
@@ -490,6 +534,9 @@ assignment2_OBJECTS = \
 "CMakeFiles/assignment2.dir/core/menu.cpp.o" \
 "CMakeFiles/assignment2.dir/core/tileboard.cpp.o" \
 "CMakeFiles/assignment2.dir/ui/game.cpp.o" \
+"CMakeFiles/assignment2.dir/core/cropfactory.cpp.o" \
+"CMakeFiles/assignment2.dir/core/animalfactory.cpp.o" \
+"CMakeFiles/assignment2.dir/core/savemanager.cpp.o" \
 "CMakeFiles/assignment2.dir/assignment2_autogen/EWIEGA46WW/qrc_resources.cpp.o"
 
 # External object files for target assignment2
@@ -519,13 +566,16 @@ assignment2: CMakeFiles/assignment2.dir/core/market.cpp.o
 assignment2: CMakeFiles/assignment2.dir/core/menu.cpp.o
 assignment2: CMakeFiles/assignment2.dir/core/tileboard.cpp.o
 assignment2: CMakeFiles/assignment2.dir/ui/game.cpp.o
+assignment2: CMakeFiles/assignment2.dir/core/cropfactory.cpp.o
+assignment2: CMakeFiles/assignment2.dir/core/animalfactory.cpp.o
+assignment2: CMakeFiles/assignment2.dir/core/savemanager.cpp.o
 assignment2: CMakeFiles/assignment2.dir/assignment2_autogen/EWIEGA46WW/qrc_resources.cpp.o
 assignment2: CMakeFiles/assignment2.dir/build.make
 assignment2: /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtWidgets.framework/Versions/A/QtWidgets
 assignment2: /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtGui.framework/Versions/A/QtGui
 assignment2: /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtCore.framework/Versions/A/QtCore
 assignment2: CMakeFiles/assignment2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Linking CXX executable assignment2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_31) "Linking CXX executable assignment2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/assignment2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

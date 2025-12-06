@@ -762,6 +762,7 @@
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdarg.h \
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/character.h \
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/field.h \
+  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/ianimal.h \
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/icrops.h \
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/itemtypeenum.h \
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/itiles.h \

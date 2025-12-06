@@ -765,6 +765,8 @@ assignment2_autogen/timestamp: \
 	/Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/CMakeFiles/4.1.2/CMakeCXXCompiler.cmake \
 	/Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/CMakeFiles/4.1.2/CMakeSystem.cmake \
 	/Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/build/Desktop_Qt_6_9_3_Clang_arm64-Debug/assignment2_autogen/moc_predefs.h \
+	/Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/animalfactory.cpp \
+	/Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/animalfactory.h \
 	/Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/character.cpp \
 	/Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/character.h \
 	/Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/chicken.cpp \
@@ -773,6 +775,8 @@ assignment2_autogen/timestamp: \
 	/Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/corn.h \
 	/Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/cow.cpp \
 	/Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/cow.h \
+	/Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/cropfactory.cpp \
+	/Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/cropfactory.h \
 	/Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/farminghoe.cpp \
 	/Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/farminghoe.h \
 	/Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/field.cpp \
@@ -796,6 +800,8 @@ assignment2_autogen/timestamp: \
 	/Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/menu.h \
 	/Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/player.cpp \
 	/Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/player.h \
+	/Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/savemanager.cpp \
+	/Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/savemanager.h \
 	/Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/tileboard.cpp \
 	/Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/tileboard.h \
 	/Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/tomato.cpp \

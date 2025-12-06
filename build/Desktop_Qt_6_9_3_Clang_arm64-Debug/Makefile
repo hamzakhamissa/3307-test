@@ -203,6 +203,30 @@ assignment2_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/assignment2_autogen/mocs_compilation.cpp.s
 .PHONY : assignment2_autogen/mocs_compilation.cpp.s
 
+core/animalfactory.o: core/animalfactory.cpp.o
+.PHONY : core/animalfactory.o
+
+# target to build an object file
+core/animalfactory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/animalfactory.cpp.o
+.PHONY : core/animalfactory.cpp.o
+
+core/animalfactory.i: core/animalfactory.cpp.i
+.PHONY : core/animalfactory.i
+
+# target to preprocess a source file
+core/animalfactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/animalfactory.cpp.i
+.PHONY : core/animalfactory.cpp.i
+
+core/animalfactory.s: core/animalfactory.cpp.s
+.PHONY : core/animalfactory.s
+
+# target to generate assembly for a file
+core/animalfactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/animalfactory.cpp.s
+.PHONY : core/animalfactory.cpp.s
+
 core/character.o: core/character.cpp.o
 .PHONY : core/character.o
 
@@ -298,6 +322,30 @@ core/cow.s: core/cow.cpp.s
 core/cow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/cow.cpp.s
 .PHONY : core/cow.cpp.s
+
+core/cropfactory.o: core/cropfactory.cpp.o
+.PHONY : core/cropfactory.o
+
+# target to build an object file
+core/cropfactory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/cropfactory.cpp.o
+.PHONY : core/cropfactory.cpp.o
+
+core/cropfactory.i: core/cropfactory.cpp.i
+.PHONY : core/cropfactory.i
+
+# target to preprocess a source file
+core/cropfactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/cropfactory.cpp.i
+.PHONY : core/cropfactory.cpp.i
+
+core/cropfactory.s: core/cropfactory.cpp.s
+.PHONY : core/cropfactory.s
+
+# target to generate assembly for a file
+core/cropfactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/cropfactory.cpp.s
+.PHONY : core/cropfactory.cpp.s
 
 core/farminghoe.o: core/farminghoe.cpp.o
 .PHONY : core/farminghoe.o
@@ -563,6 +611,30 @@ core/player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/player.cpp.s
 .PHONY : core/player.cpp.s
 
+core/savemanager.o: core/savemanager.cpp.o
+.PHONY : core/savemanager.o
+
+# target to build an object file
+core/savemanager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/savemanager.cpp.o
+.PHONY : core/savemanager.cpp.o
+
+core/savemanager.i: core/savemanager.cpp.i
+.PHONY : core/savemanager.i
+
+# target to preprocess a source file
+core/savemanager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/savemanager.cpp.i
+.PHONY : core/savemanager.cpp.i
+
+core/savemanager.s: core/savemanager.cpp.s
+.PHONY : core/savemanager.s
+
+# target to generate assembly for a file
+core/savemanager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment2.dir/build.make CMakeFiles/assignment2.dir/core/savemanager.cpp.s
+.PHONY : core/savemanager.cpp.s
+
 core/tileboard.o: core/tileboard.cpp.o
 .PHONY : core/tileboard.o
 
@@ -772,6 +844,9 @@ help:
 	@echo "... assignment2_autogen/mocs_compilation.o"
 	@echo "... assignment2_autogen/mocs_compilation.i"
 	@echo "... assignment2_autogen/mocs_compilation.s"
+	@echo "... core/animalfactory.o"
+	@echo "... core/animalfactory.i"
+	@echo "... core/animalfactory.s"
 	@echo "... core/character.o"
 	@echo "... core/character.i"
 	@echo "... core/character.s"
@@ -784,6 +859,9 @@ help:
 	@echo "... core/cow.o"
 	@echo "... core/cow.i"
 	@echo "... core/cow.s"
+	@echo "... core/cropfactory.o"
+	@echo "... core/cropfactory.i"
+	@echo "... core/cropfactory.s"
 	@echo "... core/farminghoe.o"
 	@echo "... core/farminghoe.i"
 	@echo "... core/farminghoe.s"
@@ -817,6 +895,9 @@ help:
 	@echo "... core/player.o"
 	@echo "... core/player.i"
 	@echo "... core/player.s"
+	@echo "... core/savemanager.o"
+	@echo "... core/savemanager.i"
+	@echo "... core/savemanager.s"
 	@echo "... core/tileboard.o"
 	@echo "... core/tileboard.i"
 	@echo "... core/tileboard.s"

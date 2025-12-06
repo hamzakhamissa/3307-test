@@ -1015,6 +1015,7 @@ CMakeFiles/assignment2.dir/assignment2_autogen/mocs_compilation.cpp.o: \
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/tileboard.h \
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/itiles.h \
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/icrops.h \
+  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/ianimal.h \
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/field.h \
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/yard.h \
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/water.h \

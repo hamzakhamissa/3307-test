@@ -11,7 +11,6 @@
 #include "water.h"
 #include "character.h"
 
-// Forward declarations
 class Player;
 class IInteract;
 
@@ -25,7 +24,9 @@ public:
               const QString& seedTexPath,
               const QString& plantPhase1TexPath,
               const QString& plantPhase2TexPath,
-              const QString& plantPhase3TexPath);
+              const QString& plantPhase3TexPath,
+              const QString& cowTexPath,
+              const QString& chickenTexPath);
 
     void render(QPainter& painter, float cameraX, float cameraY, int viewWidth, int viewHeight);
     void interactAt(int x, int y, Player* player);
@@ -45,7 +46,6 @@ private:
 
     std::vector<std::vector<std::unique_ptr<ITiles>>> tiles;
 
-    // Textures
     QPixmap grassTex;
     QPixmap dirtTex;
     QPixmap seedTex;
@@ -55,15 +55,14 @@ private:
     QPixmap wheatStage1Tex;
     QPixmap wheatStage2Tex;
     QPixmap wheatStage3Tex;
-
     QPixmap tomatoStage1Tex;
     QPixmap tomatoStage2Tex;
     QPixmap tomatoStage3Tex;
-
     QPixmap cornStage1Tex;
     QPixmap cornStage2Tex;
     QPixmap cornStage3Tex;
+    QPixmap cowTex;
+    QPixmap chickenTex;
 };
 
-#endif // TILEBOARD_H
-
+#endif

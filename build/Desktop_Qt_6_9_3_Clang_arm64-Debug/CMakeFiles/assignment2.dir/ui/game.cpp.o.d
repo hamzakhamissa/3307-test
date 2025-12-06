@@ -1014,6 +1014,7 @@ CMakeFiles/assignment2.dir/ui/game.cpp.o: \
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/tileboard.h \
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/itiles.h \
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/icrops.h \
+  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/ianimal.h \
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/field.h \
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/yard.h \
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/water.h \
@@ -1070,4 +1071,12 @@ CMakeFiles/assignment2.dir/ui/game.cpp.o: \
   /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtCore.framework/Headers/QJsonArray \
   /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtCore.framework/Headers/qjsonarray.h \
   /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/inventory.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
+  /Users/hamzakhamissa/Downloads/Qt\ test/oop-assignment-2-julian-hamza/core/savemanager.h \
+  /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtCore.framework/Headers/QDir \
+  /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtCore.framework/Headers/qdir.h \
+  /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtCore.framework/Headers/qdirlisting.h \
+  /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtCore.framework/Headers/qfileinfo.h \
+  /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtCore.framework/Headers/qtimezone.h \
+  /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtCore.framework/Headers/QStandardPaths \
+  /Users/hamzakhamissa/Qt/6.9.3/macos/lib/QtCore.framework/Headers/qstandardpaths.h

@@ -446,6 +446,12 @@
 	"HEADERS" : 
 	[
 		[
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/animalfactory.h",
+			"Mu",
+			"TAC5DWH4SE/moc_animalfactory.cpp",
+			null
+		],
+		[
 			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/character.h",
 			"Mu",
 			"TAC5DWH4SE/moc_character.cpp",
@@ -467,6 +473,12 @@
 			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/cow.h",
 			"Mu",
 			"TAC5DWH4SE/moc_cow.cpp",
+			null
+		],
+		[
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/cropfactory.h",
+			"Mu",
+			"TAC5DWH4SE/moc_cropfactory.cpp",
 			null
 		],
 		[
@@ -539,6 +551,12 @@
 			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/player.h",
 			"Mu",
 			"TAC5DWH4SE/moc_player.cpp",
+			null
+		],
+		[
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/savemanager.h",
+			"Mu",
+			"TAC5DWH4SE/moc_savemanager.cpp",
 			null
 		],
 		[
@@ -647,6 +665,11 @@
 	"SOURCES" : 
 	[
 		[
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/animalfactory.cpp",
+			"Mu",
+			null
+		],
+		[
 			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/character.cpp",
 			"Mu",
 			null
@@ -663,6 +686,11 @@
 		],
 		[
 			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/cow.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/cropfactory.cpp",
 			"Mu",
 			null
 		],
@@ -718,6 +746,11 @@
 		],
 		[
 			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/player.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/Users/hamzakhamissa/Downloads/Qt test/oop-assignment-2-julian-hamza/core/savemanager.cpp",
 			"Mu",
 			null
 		],
